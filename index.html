@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Projetos AcadÃªmicos | ISULPAR</title>
+
+  <!-- Meta Tags de SEO para IndexaÃ§Ã£o no Google -->
+  <meta name="description" content="Portal acadÃªmico com apresentaÃ§Ãµes e projetos das disciplinas de Sistemas de InformaÃ§Ã£o da faculdade ISULPAR.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Portal de Projetos AcadÃªmicos | ISULPAR">
+  <meta property="og:description" content="Acesse os sites e bases de conhecimento desenvolvidos pelos alunos da ISULPAR.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="cabecalho-principal">
+    <h1>Portal de Projetos AcadÃªmicos â€” ISULPAR</h1>
+    <p>Base de Conhecimento e ApresentaÃ§Ã£o dos Projetos das Disciplinas</p>
+  </header>
+
+  <main class="container-principal">
+    <!-- Barra de filtro reutilizando o estilo de abas do projeto base -->
+    <nav class="menu-abas centralizado" aria-label="Filtrar disciplinas">
+      <button class="botao-aba ativo" data-filtro="todos">Todas as Disciplinas (9)</button>
+      <button class="botao-aba" data-filtro="publicado">Projetos Publicados</button>
+      <button class="botao-aba" data-filtro="reservado">EspaÃ§os Reservados</button>
+    </nav>
+
+    <!-- A View injetarÃ¡ os 9 cartÃµes dentro desta secÃ§Ã£o -->
+    <section id="grade" aria-live="polite"></section>
+
+    <!-- EspaÃ§o reservado para os alunos pegarem o cÃ³digo e enviarem os seus links -->
+    <section class="painel-instrucoes">
+      <div class="painel-cabecalho">
+        <h2>ðŸ‘¨â€ðŸ’» Ãrea do Aluno: Como integrar seu projeto ao Portal</h2>
+        <a href="https://github.com/GuigasBR/Host_ISULPAR_ihm" target="_blank" rel="noopener noreferrer" class="btn-secundario">
+          Baixar CÃ³digo-Fonte no GitHub
+        </a>
+      </div>
+
+      <p>
+        Os cartÃµes marcados como <strong>EspaÃ§o Reservado</strong> jÃ¡ estÃ£o estruturados no cÃ³digo aguardando o link de cada equipe. Pode clonar o nosso repositÃ³rio para usar o layout padrÃ£o ou hospedar o seu site prÃ³prio e enviar-nos os dados abaixo para atualizarmos o arquivo <code>src/models/ProjetoModel.js</code>:
+      </p>
+
+      <div class="bloco-codigo-wrapper">
+        <pre id="codigo-exemplo"><code>{
+  id: 1, // NÃºmero da sua disciplina (1 a 9)
+  nome: "Nome da Disciplina",
+  equipe: "Nome dos Integrantes",
+  status: "publicado",
+  url: "https://link-do-projeto-do-grupo.github.io/"
+}</code></pre>
+        <button id="btn-copiar-modelo" class="botao-aba">Copiar Modelo</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Sistemas de InformaÃ§Ã£o â€” Instituto Superior do Litoral do ParanÃ¡ (ISULPAR)</p>
+  </footer>
+
+  <!-- Carrega o ponto de entrada MVC usando mÃ³dulos nativos do ES6 -->
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
+
+
