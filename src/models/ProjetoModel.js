@@ -1,8 +1,3 @@
-/**
- * MODEL: Gere os dados e o estado dos projetos das disciplinas.
- * Para adicionar o projeto de um grupo, altere 'status' para "publicado"
- * e insira o link final no campo 'url'.
- */
 export class ProjetoModel {
   constructor() {
     this.projetos = [
@@ -10,7 +5,7 @@ export class ProjetoModel {
         id: 1,
         nome: "Banco de Dados",
         equipe: "Espaço reservado para a equipe",
-        status: "reservado", // Valores aceites: "publicado" | "reservado"
+        status: "reservado",
         url: null
       },
       {
@@ -68,11 +63,24 @@ export class ProjetoModel {
         equipe: "Projeto Base (Referência)",
         status: "publicado",
         url: "disciplinas/disciplina-9.html"
+      },
+      {
+        id: 10, // Mantenha o número do ID que você atribuiu ao card
+        nome: "Redes de Computadores 2",
+        equipe: "Miguel Colodel, Nykollas Armindo e Vitor Brunetto",
+        status: "publicado",
+        url: "disciplinas/redes-2/redes.html" // Ou "disciplinas/redes.html" se colocar direto na pasta disciplinas
+      },
+      {
+        id: 11,
+        nome: "Redes de Computadores 2",
+        equipe: "Espaço reservado para a equipe",
+        status: "reservado",
+        url: null
       }
     ];
   }
 
-  // Retorna todos os projetos ou filtra por status ("publicado" / "reservado")
   listarPorFiltro(filtro = "todos") {
     if (filtro === "todos") return this.projetos;
     return this.projetos.filter((projeto) => projeto.status === filtro);
