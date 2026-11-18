@@ -60,7 +60,7 @@ export class ProjetoModel {
       {
         id: 9,
         nome: "Inteligência Artificial",
-        equipe: "Projeto Base (Referência)",
+        equipe: "Rafael e Valmir",
         status: "publicado",
         url: "disciplinas/disciplina-9.html"
       },
