@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ciclo de Vida e Processos | Engenharia de Software</title>
+
+    <link rel="stylesheet" href="../css/engenharia.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <a href="../disciplina-2.html" class="voltar">
+            ← Voltar à Engenharia de Software
+        </a>
+
+        <header class="cabecalho">
+
+            <h1>Engenharia de Software</h1>
+
+            <p>Disciplina 2 — Base de Conhecimento Acadêmica</p>
+
+        </header>
+
+        <nav class="menu-principal">
+
+            <a href="../disciplina-2.html" class="botao-menu">
+                Introdução
+            </a>
+
+            <button
+                type="button"
+                class="botao-menu ativo"
+                id="botao-conteudos"
+                aria-expanded="false"
+                aria-controls="lista-conteudos">
+
+                Conteúdos ▼
+
+            </button>
+
+            <a href="quiz.html" class="botao-menu">
+                Quiz
+            </a>
+
+        </nav>
+
+        <section
+            class="lista-conteudos"
+            id="lista-conteudos"
+            hidden>
+
+            <h2>Conteúdos disponíveis</h2>
+
+            <a href="ciclo-de-vida.html">
+                Ciclo de Vida e Processos
+            </a>
+
+            <a href="requisitos.html">
+                Engenharia de Requisitos
+            </a>
+
+            <a href="modelagem-uml.html">
+                Modelagem e UML
+            </a>
+
+            <a href="metodologias.html">
+                Metodologias de Desenvolvimento
+            </a>
+
+        </section>
+
+        <section class="conteudo-principal">
+
+            <h2>1. Ciclo de Vida e Processos</h2>
+
+            <h3>Etapas do desenvolvimento</h3>
+
+            <p>
+                O desenvolvimento de software é formado por atividades
+                organizadas que acompanham o sistema desde sua concepção
+                até a manutenção.
+            </p>
+
+            <p>Entre as principais etapas estão:</p>
+
+            <ol>
+                <li>
+                    <strong>Comunicação:</strong>
+                    identificação das necessidades do cliente e compreensão do problema.
+                </li>
+
+                <li>
+                    <strong>Planejamento:</strong>
+                    definição de prazos, custos, recursos e organização das atividades.
+                </li>
+
+                <li>
+                    <strong>Modelagem:</strong>
+                    análise do problema e elaboração de uma proposta de solução.
+                </li>
+
+                <li>
+                    <strong>Construção:</strong>
+                    implementação do software por meio da programação e realização de testes.
+                </li>
+
+                <li>
+                    <strong>Entrega e implantação:</strong>
+                    disponibilização do sistema, instalação, suporte e obtenção de feedback.
+                </li>
+            </ol>
+
+            <p>
+                A forma como essas etapas são organizadas depende do
+                processo ou modelo de desenvolvimento escolhido para
+                o projeto.
+            </p>
+
+            <h3>Processos de software</h3>
+
+            <p>
+                Um processo de software é um conjunto estruturado de
+                atividades necessárias para desenvolver um sistema,
+                desde sua concepção até sua manutenção.Ele organiza o 
+                trabalho da equipe e ajuda a acompanhar
+                o desenvolvimento, contribuindo para a qualidade do produto.
+                <br>
+                Os processos podem ser organizados de diferentes maneiras.
+                Alguns modelos seguem etapas mais sequenciais, enquanto
+                outros permitem ciclos de desenvolvimento e entregas parciais.
+                <br>
+                Os modelos prescritivos apresentam fases e atividades
+                definidas, mas podem ser adaptados às necessidades de cada projeto.
+            </p>
+
+
+            <h3>Modelo Cascata</h3>
+
+            <p>
+                O modelo Cascata organiza o desenvolvimento de forma
+                linear e sequencial. Cada etapa deve ser concluída
+                antes do início da próxima.
+                <br>
+                Suas fases incluem comunicação, planejamento, modelagem,
+                construção e entrega.
+            </p>
+
+            <p><strong>Vantagens:</strong></p>
+
+            <ul>
+                <li>É simples e fácil de compreender.</li>
+                <li>Facilita o gerenciamento das etapas.</li>
+                <li>Pode funcionar bem quando os requisitos estão bem definidos.</li>
+            </ul>
+
+            <p><strong>Desvantagens:</strong></p>
+
+            <ul>
+                <li>Apresenta dificuldade para lidar com mudanças.</li>
+                <li>Problemas podem ser identificados somente em etapas avançadas.</li>
+                <li>O cliente pode ter contato com o software funcionando apenas no final.</li>
+            </ul>
+
+            <p>
+                É mais indicado para projetos menores, com requisitos
+                claros e bem estabelecidos.
+            </p>
+
+            <h3>Modelo em V</h3>
+
+            <p>
+                O modelo em V é uma variação do modelo Cascata.
+                Ele relaciona cada etapa de desenvolvimento a uma
+                atividade de verificação ou validação.
+                <br>
+                Seu foco está na qualidade e nos testes, que são
+                associados às etapas do desenvolvimento.
+            </p>
+
+            <p><strong>Vantagens:</strong></p>
+
+            <ul>
+                <li>Dá atenção à verificação e à validação.</li>
+                <li>Ajuda a identificar problemas durante o processo.</li>
+            </ul>
+
+            <p><strong>Desvantagens:</strong></p>
+
+            <ul>
+                <li>Possui dificuldade para lidar com mudanças nos requisitos.</li>
+                <li>O cliente pode visualizar o software completo apenas em etapas posteriores.</li>
+            </ul>
+
+            <h3>Modelo Incremental</h3>
+
+            <p>
+                O modelo incremental divide o desenvolvimento em partes
+                menores. Cada ciclo produz uma versão operacional do
+                sistema, que pode ser utilizada ou avaliada.
+                <br>
+                Dessa maneira, o software é desenvolvido e entregue
+                gradualmente, permitindo que os usuários tenham contato
+                com algumas funcionalidades antes da conclusão de todo
+                o projeto.
+            </p>
+
+            <p><strong>Vantagens:</strong></p>
+
+            <ul>
+                <li>Permite entregar uma primeira versão em menos tempo.</li>
+                <li>Facilita a obtenção de feedback.</li>
+                <li>Pode reduzir riscos associados a cada incremento.</li>
+            </ul>
+
+            <p><strong>Desvantagens:</strong></p>
+
+            <ul>
+                <li>Mudanças nos requisitos podem exigir alterações nos incrementos.</li>
+                <li>O gerenciamento do projeto pode se tornar mais complexo.</li>
+            </ul>
+
+            <h3>Modelo Espiral</h3>
+
+            <p>
+                O modelo Espiral utiliza ciclos de desenvolvimento que
+                envolvem planejamento, análise de riscos, desenvolvimento
+                e avaliação.A cada ciclo, o sistema pode receber melhorias e novas
+                funcionalidades.
+                <br>
+                Sua principal característica é o planejamento orientado
+                à análise de riscos, considerando situações que podem
+                prejudicar o desenvolvimento ou a qualidade do produto.
+            </p>
+
+            <p><strong>Vantagens:</strong></p>
+
+            <ul>
+                <li>Permite avaliar riscos durante o desenvolvimento.</li>
+                <li>Possibilita melhorias a cada ciclo.</li>
+                <li>Pode combinar características de outros modelos.</li>
+            </ul>
+
+            <p><strong>Desvantagens:</strong></p>
+
+            <ul>
+                <li>Exige atenção constante à identificação e análise de riscos.</li>
+                <li>O gerenciamento dos ciclos pode ser complexo.</li>
+            </ul>
+
+            <button
+                type="button"
+                class="voltar-topo"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+
+                ↑ Voltar ao Topo
+
+            </button>
+
+            <hr>
+
+        </section>
+
+    </main>
+
+    <script src="../js/engenharia.js"></script>
+
+</body>
+
+</html>

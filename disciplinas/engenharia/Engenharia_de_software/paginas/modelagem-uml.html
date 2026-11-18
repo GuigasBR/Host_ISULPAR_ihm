@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modelagem e UML | Engenharia de Software</title>
+
+    <link rel="stylesheet" href="../css/engenharia.css">
+</head>
+
+<body>
+
+    <main class="pagina">
+
+        <a href="../disciplina-2.html" class="voltar">
+            ← Voltar à Engenharia de Software
+        </a>
+
+        <header class="cabecalho">
+
+            <h1>Engenharia de Software</h1>
+
+            <p>Disciplina 2 — Base de Conhecimento Acadêmica</p>
+
+        </header>
+
+        <nav class="menu-principal">
+
+            <a href="../disciplina-2.html" class="botao-menu">
+                Introdução
+            </a>
+
+            <button
+                type="button"
+                class="botao-menu ativo"
+                id="botao-conteudos"
+                aria-expanded="false"
+                aria-controls="lista-conteudos">
+
+                Conteúdos ▼
+
+            </button>
+
+            <a href="quiz.html" class="botao-menu">
+                Quiz
+            </a>
+
+        </nav>
+
+        <section
+            class="lista-conteudos"
+            id="lista-conteudos"
+            hidden>
+
+            <h2>Conteúdos disponíveis</h2>
+
+            <a href="ciclo-de-vida.html">
+                Ciclo de Vida e Processos
+            </a>
+
+            <a href="requisitos.html">
+                Engenharia de Requisitos
+            </a>
+
+            <a href="modelagem-uml.html">
+                Modelagem e UML
+            </a>
+
+            <a href="metodologias.html">
+                Metodologias de Desenvolvimento
+            </a>
+
+        </section>
+
+        <section class="conteudo-principal">
+
+            <h2>3. Modelagem e UML</h2>
+
+            <h3>Introdução à UML</h3>
+
+            <p>
+                UML significa <em>Unified Modeling Language</em>,
+                ou Linguagem de Modelagem Unificada. É uma linguagem utilizada 
+                para visualizar, especificar,
+                construir e documentar sistemas, especialmente sistemas
+                orientados a objetos.
+                <br>
+                A UML permite representar diferentes aspectos de um
+                software por meio de diagramas, facilitando a comunicação
+                entre os participantes do projeto.
+            </p>
+
+            <p>
+                É importante destacar que UML é uma linguagem de modelagem,
+                e não uma metodologia ou um processo de desenvolvimento.
+            </p>
+
+            <p>
+                Os diagramas UML podem representar aspectos estruturais
+                e comportamentais de um sistema.
+            </p>
+
+
+            <h3>Diagrama de classes</h3>
+
+            <p>
+                O diagrama de classes representa a estrutura de um sistema,
+                mostrando suas classes, atributos, operações e relacionamentos.
+            </p>
+
+            <p>
+                Uma classe representa um conjunto de objetos que possuem
+                características e comportamentos em comum.
+            </p>
+
+            <p><strong>Seus principais elementos são:</strong></p>
+
+            <ul>
+                <li>
+                    <strong>Classe:</strong>
+                    representa uma estrutura que descreve objetos.
+                </li>
+
+                <li>
+                    <strong>Atributos:</strong>
+                    representam as características ou informações de uma classe.
+                </li>
+
+                <li>
+                    <strong>Operações ou métodos:</strong>
+                    representam as ações ou comportamentos associados à classe.
+                </li>
+
+                <li>
+                    <strong>Relacionamentos:</strong>
+                    demonstram como as classes se conectam.
+                </li>
+            </ul>
+
+            <p>
+                Entre os relacionamentos utilizados na modelagem estão:
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Associação:</strong>
+                    representa uma ligação entre classes.
+                </li>
+
+                <li>
+                    <strong>Agregação:</strong>
+                    representa uma relação de todo e parte em que as
+                    partes podem existir independentemente do todo.
+                </li>
+
+                <li>
+                    <strong>Composição:</strong>
+                    representa uma relação de todo e parte com dependência
+                    mais forte entre os elementos.
+                </li>
+
+                <li>
+                    <strong>Generalização:</strong>
+                    representa uma relação de herança entre classes.
+                </li>
+            </ul>
+
+            <figure class="figura-diagrama">
+
+                <img
+                    src="../imagens/diagrama-classes.jpeg"
+                    alt="Diagrama de classes UML de um sistema de loja online"
+                    class="imagem-diagrama">
+
+                <figcaption>
+                    Exemplo de diagrama de classes de uma loja online.
+                </figcaption>
+
+            </figure>
+
+            <p>
+                O diagrama de classes ajuda a compreender como as informações
+                e responsabilidades estão organizadas no sistema.
+            </p>
+
+
+            <h3>Diagrama de casos de uso</h3>
+
+            <p>
+                O diagrama de casos de uso representa as funcionalidades
+                de um sistema e os participantes que interagem com ele.
+            </p>
+
+            <p><strong>Seus principais elementos são:</strong></p>
+
+            <ul>
+                <li>
+                    <strong>Ator:</strong>
+                    representa um papel desempenhado por uma pessoa
+                    ou sistema externo que interage com o software.
+                </li>
+
+                <li>
+                    <strong>Caso de uso:</strong>
+                    representa uma funcionalidade ou serviço oferecido
+                    pelo sistema.
+                </li>
+
+                <li>
+                    <strong>Associação:</strong>
+                    indica a interação entre um ator e um caso de uso.
+                </li>
+
+                <li>
+                    <strong>Relacionamento Include:</strong>
+                    representa a inclusão obrigatória de um comportamento
+                    de outro caso de uso.
+                </li>
+
+                <li>
+                    <strong>Relacionamento Extend:</strong>
+                    representa a extensão de um caso de uso por um
+                    comportamento adicional, em determinadas condições.
+                </li>
+
+                <li>
+                    <strong>Generalização:</strong>
+                    representa uma relação de especialização entre
+                    atores ou casos de uso.
+                </li>
+            </ul>
+
+            <figure class="figura-diagrama">
+
+                <img
+                    src="../imagens/diagrama-caso-de-uso.jpeg"
+                    alt="Diagrama de casos de uso UML de um sistema de empréstimo de biblioteca"
+                    class="imagem-diagrama">
+
+                <figcaption>
+                    Exemplo de diagrama de casos de uso de um sistema
+                    de empréstimo de biblioteca.
+                </figcaption>
+
+            </figure>
+
+            <p>
+                O diagrama permite visualizar as funcionalidades disponíveis
+                e os participantes envolvidos, facilitando a compreensão
+                dos requisitos do sistema.
+            </p>
+
+
+            <button
+                type="button"
+                class="voltar-topo"
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+
+                ↑ Voltar ao Topo
+
+            </button>
+
+            <hr>
+
+        </section>
+
+    </main>
+
+    <script src="../js/engenharia.js"></script>
+
+</body>
+
+</html>

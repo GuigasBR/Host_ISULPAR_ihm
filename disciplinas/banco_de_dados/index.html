@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modelo vazio de base de conhecimento acadêmica.">
+  <title>Banco de dados</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="conteudo" id="topo">
+    <a href="../../index.html" class="link-voltar"
+      style="display:inline-block; padding: 10px 20px; margin: 20px; font-weight: bold; background-color: #1d4370; color: #ffffff; border-radius: 6px; text-decoration: none; font-family: sans-serif; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+      ← Voltar ao Portal
+    </a>
+
+    <header class="cabecalho-disciplina">
+      <div class="logo-container">
+        <img src="imagens/logo-isulpar.webp" alt="Logo ISULPAR" class="logo-isulpar">
+      </div>
+      <h1>Banco de Dados</h1>
+    </header>
+
+    <nav class="menu-abas" aria-label="Seções da disciplina" role="tablist">
+      <button type="button" class="botao-aba ativo" role="tab" aria-controls="ementa" aria-selected="true"
+        onclick="abrirAba('ementa', this)">Ementa</button>
+      <button type="button" class="botao-aba" role="tab" aria-controls="artigos" aria-selected="false"
+        onclick="abrirAba('artigos', this)">Artigos</button>
+      <button type="button" class="botao-aba" role="tab" aria-controls="cases" aria-selected="false"
+        onclick="abrirAba('cases', this)">Cases</button>
+      <button type="button" class="botao-aba" role="tab" aria-controls="videos" aria-selected="false"
+        onclick="abrirAba('videos', this)">Vídeos</button>
+      <button type="button" class="botao-aba" role="tab" aria-controls="seminarios" aria-selected="false"
+        onclick="abrirAba('seminarios', this)">Seminários</button>
+      <button type="button" class="botao-aba" role="tab" aria-controls="storytelling" aria-selected="false"
+        onclick="abrirAba('storytelling', this)">Storytelling</button>
+    </nav>
+
+    <section id="ementa" class="secao-aba ativa" role="tabpanel" aria-labelledby="titulo-ementa">
+      <h2 id="titulo-ementa">1. Ementa da Disciplina</h2>
+      <p>Banco de Dados é uma área da Computação dedicada ao estudo, à organização, ao armazenamento e ao gerenciamento
+        de informações. Seu objetivo é permitir que os dados sejam armazenados de maneira estruturada, facilitando
+        consultas, atualizações, pesquisas e o acesso seguro às informações.<br>
+        </br>Os bancos de dados estão presentes em praticamente todos os setores da sociedade, como sistemas bancários,
+        lojas virtuais, hospitais, redes sociais, instituições de ensino e empresas. Sempre que um sistema precisa
+        armazenar informações de usuários, produtos, transações ou registros, existe a possibilidade de utilização de um
+        banco de dados.<br>
+        <br>Compreender essa área significa conhecer como os dados são organizados, como podem ser manipulados e quais
+        tecnologias permitem garantir sua integridade, segurança e disponibilidade.
+      </p>
+      <div class="caixa-destaque">
+        <h3>Ementa</h3>
+        <p><strong>Carga Horária: 80h</strong></p>
+        <p>Estudo dos fundamentos de Banco de Dados, conceitos de armazenamento e organização de informações. Introdução
+          aos modelos de dados, modelagem conceitual, lógica e física. Estudo do modelo relacional, tabelas, registros,
+          atributos, chaves primárias e estrangeiras. Linguagem SQL para criação, consulta, atualização e exclusão de
+          dados. Introdução à normalização, relacionamentos entre tabelas, integridade referencial, transações e
+          sistemas gerenciadores de banco de dados. Discussão sobre segurança, controle de acesso, backup e recuperação
+          de informações.</p>
+      </div>
+      <h3>Objetivo Geral</h3>
+      <p>Compreender os fundamentos de Banco de Dados e desenvolver conhecimentos para projetar, organizar e manipular
+        informações de maneira eficiente, utilizando modelos de dados e linguagens de consulta. Desenvolver também uma
+        visão crítica sobre a importância da segurança, integridade e disponibilidade das informações nos sistemas
+        computacionais.</p>
+      <h3>Objetivos Específicos</h3>
+      <ul class="lista-padrao">
+        <li>Compreender os conceitos básicos e a importância dos bancos de dados.</li>
+        <li>Conhecer os diferentes modelos de organização e armazenamento de informações.</li>
+        <li>Entender os princípios da modelagem conceitual, lógica e física de dados.</li>
+        <li>Identificar os elementos do modelo relacional, como tabelas, campos, registros e chaves.</li>
+        <li>Aprender a utilizar a linguagem SQL para manipular e consultar informações.</li>
+        <li>Compreender os relacionamentos entre tabelas e os processos de normalização.</li>
+        <li>Conhecer os princípios de integridade, segurança, backup e recuperação de dados.</li>
+        <li>Desenvolver habilidades para projetar e administrar bancos de dados utilizados em aplicações reais.</li>
+      </ul>
+      <h3>Principais Tópicos Estudados</h3>
+      <ul class="lista-padrao">
+        <li>Fundamentos de Banco de Dados: conceitos, características, organização e importância dos dados nos sistemas
+          computacionais.</li>
+        <li>Modelagem de Dados: conceitos de modelagem conceitual, lógica e física.</li>
+        <li>Modelo Relacional: tabelas, registros, atributos, chaves primárias e estrangeiras.</li>
+        <li>Linguagem SQL: comandos de criação, consulta, atualização e exclusão de dados.</li>
+        <li>Normalização: processos de normalização e relacionamentos entre tabelas.</li>
+        <li>Integridade e Segurança: princípios de integridade referencial, segurança, backup e recuperação de dados.
+        </li>
+      </ul>
+      <h3>O que o estudante pode desenvolver?</h3>
+      <p>Ao estudar Banco de Dados, o estudante pode desenvolver raciocínio lógico, capacidade de organização de
+        informações, conhecimento em modelagem de dados e habilidade para trabalhar com consultas e comandos SQL.
+        <br>A disciplina também contribui para a compreensão de como os sistemas computacionais armazenam e utilizam
+        informações, permitindo que o estudante desenvolva projetos envolvendo cadastros, registros, consultas e
+        gerenciamento de dados. Além disso, estimula a resolução de problemas relacionados à eficiência, segurança e
+        integridade das informações.
+      </p>
+      <h3>Possíveis Caminhos Profissionais</h3>
+      <p>O conhecimento em Banco de Dados é importante para diversas áreas da Tecnologia da Informação. Sua aplicação
+        está presente no desenvolvimento de sistemas, na administração de infraestrutura tecnológica e no gerenciamento
+        de grandes volumes de informações.</p>
+      <ul class="lista-padrao">
+        <li>Administrador de Banco de Dados (DBA): responsável pela instalação, configuração, manutenção, segurança e
+          desempenho dos bancos de dados.</li>
+        <li>Desenvolvimento de Software: criação de sistemas e aplicações que utilizam bancos de dados para armazenar e
+          consultar informações.</li>
+        <li>Análise de Dados: organização, consulta e interpretação de informações para auxiliar empresas na tomada de
+          decisões.</li>
+        <li>Engenharia de Dados: desenvolvimento de estruturas e processos para coletar, armazenar, transformar e
+          disponibilizar grandes volumes de dados.</li>
+        <li>Business Intelligence (BI): utilização de dados para criar relatórios, indicadores e análises que auxiliam
+          no planejamento empresarial.</li>
+        <li>Arquitetura de Dados: planejamento e estruturação de soluções para armazenamento, integração e gerenciamento
+          de informações.</li>
+        <li>Segurança da Informação: proteção dos dados contra acessos não autorizados, vazamentos, perdas e outras
+          ameaças.</li>
+      </ul>
+      <p>Essas possibilidades não representam uma garantia de emprego ou uma lista definitiva de profissões. São
+        exemplos de áreas nas quais os conhecimentos em Banco de Dados podem ser aplicados.</p>
+      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="artigos" class="secao-aba" role="tabpanel" aria-labelledby="titulo-artigos">
+      <h2 id="titulo-artigos">2. Artigos Científicos e Marcos Históricos</h2>
+      <p>A leitura de artigos científicos ajuda o estudante a compreender como uma área evolui: quais problemas foram
+        investigados, quais tecnologias foram desenvolvidas e quais desafios permanecem. Os textos a seguir apresentam
+        estudos importantes relacionados à evolução dos bancos de dados, sua organização e suas diferentes
+        tecnologias.<br>
+        <br>O restante permanece com os dois artigos selecionados, seus resumos, importância e perguntas para reflexão,
+        além da atividade de leitura.
+      </p>
+      <article class="caixa-destaque">
+        <h3>Artigo 1: Comparativo entre os Bancos de Dados MySQL e MongoDB</h3>
+        <p><strong>Autores:</strong> Elaine Calasans de Souza e Marcus Rogério de Oliveira</p>
+        <p><strong>Publicação: </strong>2019</p>
+        <p><strong>Área: </strong>Banco de Dados</p>
+        <p><strong>Conceito central:</strong> Comparação entre modelos de banco de dados</p>
+        <h4>Resumo</h4>
+        <p>O artigo apresenta uma comparação entre dois sistemas bastante conhecidos de gerenciamento de banco de dados:
+          MySQL e MongoDB. O primeiro utiliza o modelo relacional, organizando as informações em tabelas com linhas e
+          colunas, enquanto o segundo utiliza o modelo não relacional, permitindo trabalhar com estruturas de dados mais
+          flexíveis.<br>
+          <br>O estudo apresenta as características de cada tecnologia, suas vantagens e possíveis aplicações. Também
+          discute em quais situações o MongoDB pode ser uma alternativa interessante, considerando as necessidades de
+          cada aplicação.
+        </p>
+        <h4>Por que esse artigo é importante?</h4>
+        <p>O estudo ajuda a compreender que existem diferentes maneiras de armazenar e organizar informações. Também
+          demonstra que a escolha de um banco de dados deve considerar fatores como estrutura dos dados, flexibilidade e
+          necessidades do sistema desenvolvido. </p>
+        <h4>Pergunta para reflexão</h4>
+        <p>Em um sistema de uma loja virtual, que precisa armazenar informações de clientes, produtos e pedidos, qual
+          seria a vantagem de utilizar um banco de dados relacional em vez de um não relacional?</p>
+        <p><a href="https://doi.org/10.31510/infa.v16i2.664" target="_blank" rel="noopener noreferrer">Acessar o
+            artigo</a></p>
+      </article>
+      <article class="caixa-destaque">
+        <h3>Artigo 2: Arquitetura da Informação para Processos de Negócio e Modelagem de Banco de Dados: Aproximações
+          Possíveis</h3>
+        <p><strong>Autores:</strong> Mariana Baptista Brandt e Silvana Aparecida Borsetti Gregório Vidotti</p>
+        <p><strong>Publicação: </strong>2024</p>
+        <p><strong>Área: </strong>Banco de Dados e Arquitetura da Informação</p>
+        <p><strong>Conceito central: </strong>Integração entre arquitetura da informação e modelagem de bancos de dados
+        </p>
+        <h4>Resumo</h4>
+        <p>O artigo aborda a importância da organização das informações dentro das instituições e sua relação com a
+          modelagem de bancos de dados. As autoras investigam como métodos de arquitetura da informação podem contribuir
+          para a criação de estruturas mais organizadas e eficientes.<br>
+          <br>O estudo demonstra a relação entre os elementos utilizados na organização das informações e os componentes
+          de um banco de dados, como os atributos das entidades. Também apresenta como essa integração pode facilitar o
+          acompanhamento da origem e da utilização dos dados dentro de uma organização.
+        </p>
+        <h4>Por que esse artigo é importante?</h4>
+        <p>O trabalho mostra que a criação de um banco de dados não envolve apenas armazenar informações, mas também
+          compreender como elas se relacionam e são utilizadas. Essa organização é fundamental para desenvolver sistemas
+          mais eficientes, facilitar o gerenciamento dos dados e melhorar a gestão das informações nas empresas.</p>
+        <h4>Pergunta para reflexão</h4>
+        <p>Por que planejar a estrutura de um banco de dados antes de começar a armazenar informações pode evitar
+          problemas durante o desenvolvimento de um sistema?</p>
+        <p><a href="https://doi.org/10.1590/1808-5245.30.131304" target="_blank" rel="noopener noreferrer">Acessar o
+            artigo</a></p>
+      </article>
+      <h3>Atividade de Leitura</h3>
+      <p>Após ler os resumos e consultar os artigos, compare os dois trabalhos. O primeiro apresenta diferenças entre
+        tecnologias de gerenciamento de banco de dados, enquanto o segundo aborda a importância da organização e da
+        modelagem das informações.</p>
+      <ol class="lista-padrao">
+        <li>Qual é a principal diferença entre os bancos de dados relacionais e não relacionais?</li>
+        <li>Por que a escolha de um Sistema Gerenciador de Banco de Dados (SGBD) depende das necessidades de cada
+          aplicação?</li>
+        <li>Qual é a importância da modelagem de dados antes da implementação de um banco de dados?</li>
+        <li>Como uma boa organização das informações pode contribuir para o funcionamento de empresas e sistemas
+          computacionais?</li>
+      </ol>
+      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="cases" class="secao-aba" role="tabpanel" aria-labelledby="titulo-cases">
+      <h2 id="titulo-cases">3. Case de Sucesso</h2>
+      <p>O comércio eletrônico é uma das áreas que mais dependem de bancos de dados para funcionar. Grandes empresas
+        precisam armazenar informações sobre clientes, produtos, compras e pagamentos, além de utilizar esses dados para
+        compreender o comportamento dos consumidores. Um exemplo brasileiro é o Magazine Luiza, que utiliza tecnologias
+        de análise de dados para melhorar a experiência de compra e apoiar suas decisões comerciais.</p>
+      <div class="caixa-bloco">
+        <h3>Big Data e Banco de Dados no Magazine Luiza</h3>
+        <h4>O problema inicial</h4>
+        <p>Com o crescimento das vendas pela internet, o Magazine Luiza passou a lidar com um volume cada vez maior de
+          informações sobre seus consumidores e suas operações comerciais.<br>
+          <br>Dados como histórico de compras, produtos pesquisados, valores pagos e preferências dos clientes
+          representam informações importantes para o funcionamento do negócio.<br>
+          <br>O desafio era transformar esse grande volume de informações em conhecimento útil, permitindo compreender
+          melhor o comportamento dos consumidores e oferecer recomendações de produtos mais adequadas.
+        </p>
+        <h4>A solução</h4>
+        <p>Para enfrentar esse desafio, a empresa investiu em ferramentas de Big Data e análise de informações por meio
+          de seu laboratório de tecnologia e inovação, o Luizalabs.<br>
+          <br>Um dos projetos desenvolvidos foi o Bob, voltado ao aprimoramento do sistema de recomendações de produtos.
+          A proposta era utilizar informações sobre os consumidores e seus interesses para identificar padrões de
+          comportamento e sugerir produtos de acordo com suas preferências.<br>
+          <br>Com a utilização dessas tecnologias, os dados armazenados pela empresa passaram a ter um papel ainda mais
+          estratégico, contribuindo para personalizar a experiência de compra e apoiar as decisões comerciais.
+        </p>
+        <h4>Resultados observados</h4>
+        <p>O estudo acadêmico realizado sobre o Magazine Luiza identificou benefícios e desafios relacionados à adoção
+          de Big Data no varejo virtual.<br>
+          <br>Entre os principais resultados e contribuições observados, destacam-se:
+        </p>
+        <ul class="lista-padrao">
+          <li>Melhor compreensão do comportamento dos consumidores.</li>
+          <li>Aprimoramento do sistema de recomendação de produtos.</li>
+          <li>Utilização de informações para apoiar estratégias comerciais.</li>
+          <li>Maior integração entre tecnologia e áreas de negócio.</li>
+          <li>Transformação dos dados em informações úteis para a tomada de decisões.</li>
+        </ul>
+        <p>O estudo também identificou que a implantação dessas tecnologias exige planejamento, participação das equipes
+          envolvidas e alinhamento com os objetivos da empresa.</p>
+        <h4>O que esse case ensina?</h4>
+        <ul class="lista-padrao">
+          <li>Bancos de dados são fundamentais para armazenar e organizar informações utilizadas pelas empresas.</li>
+          <li>Grandes volumes de dados podem ajudar a identificar padrões e compreender o comportamento dos
+            consumidores.</li>
+          <li>A análise de informações pode contribuir para melhorar serviços e experiências de compra.</li>
+          <li>A escolha das tecnologias deve considerar as necessidades e os objetivos de cada organização.</li>
+          <li>O uso de dados exige planejamento, segurança e responsabilidade no tratamento das informações.</li>
+        </ul>
+        <h4>Questão para discussão</h4>
+        <p>Imagine que uma loja virtual armazene informações sobre milhares de clientes, incluindo seus produtos
+          favoritos e histórico de compras. Como essas informações poderiam ser utilizadas para melhorar a experiência
+          dos consumidores? Quais cuidados deveriam ser tomados para proteger os dados pessoais dessas pessoas?</p>
+        <p><a href="https://www.scielo.br/j/rbgn/a/YJCMw9MBLV5nVWVT54cPvFp/" target="_blank"
+            rel="noopener noreferrer">Conhecer o case</a></p>
+      </div>
+      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="videos" class="secao-aba" role="tabpanel" aria-labelledby="titulo-videos">
+      <h2 id="titulo-videos">4. Vídeos Educativos</h2>
+      <p>Os vídeos abaixo são materiais introdutórios para complementar a leitura. Eles ajudam a compreender conceitos
+        fundamentais de Banco de Dados, demonstrando como as informações são armazenadas, organizadas e manipuladas nos
+        sistemas computacionais.</p>
+      <div class="caixa-bloco">
+        <h3>Vídeo 1: O que é Banco de Dados? Conceitos básicos</h3>
+        <p><strong>Canal: </strong>Curso em Vídeo</p>
+        <p><strong>Objetivo Didático: </strong>Apresentar os conceitos fundamentais de Banco de Dados, explicando sua
+          importância, funcionamento e utilização em diferentes sistemas.</p>
+        <p><a href="https://www.youtube.com/results?search_query=Curso+em+V%C3%ADdeo+o+que+%C3%A9+banco+de+dados"
+            target="_blank" rel="noopener noreferrer">Assistir ao vídeo</a></p>
+        <h4>Resumo</h4>
+        <p>O vídeo apresenta os conceitos básicos de Banco de Dados, explicando como as informações podem ser
+          armazenadas e organizadas para facilitar seu acesso e gerenciamento.<br>
+          <br>Ao assistir, procure identificar a diferença entre dados e informações, além de compreender por que os
+          bancos de dados são importantes para o funcionamento de sistemas utilizados no cotidiano, como lojas virtuais,
+          aplicativos e sistemas bancários.
+        </p>
+      </div>
+      <div class="caixa-bloco">
+        <h3>Vídeo 2: SQL para iniciantes – Aprenda os principais comandos</h3>
+        <p><strong>Canal:</strong>Hashtag Programação</p>
+        <p><strong>Objetivo Didático: </strong>Apresentar a linguagem SQL e demonstrar como utilizar comandos para criar
+          tabelas, inserir informações, realizar consultas e modificar registros em um banco de dados.</p>
+        <p><a href="https://www.youtube.com/results?search_query=Hashtag+Programa%C3%A7%C3%A3o+SQL+para+iniciantes"
+            target="_blank" rel="noopener noreferrer">Assistir ao vídeo</a></p>
+        <h4>Resumo</h4>
+        <p>O vídeo apresenta a linguagem SQL (Structured Query Language), utilizada para interagir com bancos de dados
+          relacionais. Ele demonstra como comandos específicos permitem realizar diferentes operações sobre as
+          informações armazenadas.<br>
+          <br>Entre os principais comandos estão o SELECT, utilizado para consultar dados; o INSERT, responsável por
+          inserir novos registros; o UPDATE, utilizado para atualizar informações; e o DELETE, que permite excluir
+          registros.<br>
+          <br>O conteúdo também ajuda a compreender como essas operações são utilizadas no desenvolvimento de sistemas e
+          na administração de informações.
+        </p>
+        <h4>Questão para reflexão</h4>
+        <p>Por que a linguagem SQL é importante para quem trabalha com desenvolvimento de sistemas e gerenciamento de
+          bancos de dados?</p>
+      </div>
+      <h3>Atividade após os vídeos</h3>
+      <ol class="lista-padrao">
+        <li>Explique, com suas palavras, o que é um Banco de Dados e qual é sua principal finalidade.</li>
+        <li>Qual é a diferença entre um banco de dados e um Sistema Gerenciador de Banco de Dados (SGBD)?</li>
+        <li>Para que servem os comandos SELECT, INSERT, UPDATE e DELETE?</li>
+        <li>Por que organizar corretamente as informações em um banco de dados é importante para evitar erros e
+          inconsistências?</li>
+      </ol>
+      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="seminarios" class="secao-aba" role="tabpanel" aria-labelledby="titulo-seminarios">
+      <h2 id="titulo-seminarios">5. Registro de Seminário</h2>
+      <div class="caixa-bloco">
+        <h3>Tema do Seminário: Segurança, Privacidade e Integridade em Bancos de Dados</h3>
+        <h4>Contextualização</h4>
+        <p>Os bancos de dados armazenam informações importantes para o funcionamento de empresas, instituições e
+          sistemas computacionais. Dados pessoais, informações financeiras, registros de clientes e históricos de
+          transações são alguns exemplos de informações que precisam ser armazenadas e protegidas.<br>
+          <br>Entretanto, o armazenamento dessas informações também envolve riscos. Acessos não autorizados, vazamentos,
+          alterações indevidas e perda de dados podem causar prejuízos financeiros e comprometer a privacidade dos
+          usuários.<br>
+          <br>Por isso, a administração de bancos de dados exige cuidados relacionados à segurança, ao controle de
+          acesso e à integridade das informações.
+        </p>
+        <h4>Objetivo do seminário</h4>
+        <p>Analisar a importância da segurança e da privacidade em bancos de dados, discutindo os principais riscos
+          relacionados ao armazenamento de informações e as medidas utilizadas para proteger os dados contra acessos
+          indevidos, alterações e perdas.</p>
+        <h4>Roteiro da apresentação</h4>
+        <ol class="lista-padrao">
+          <li>Introdução: apresentar o conceito de Banco de Dados e sua importância no armazenamento de informações.
+          </li>
+          <li>Como os dados são armazenados: explicar como as informações são organizadas em tabelas, registros e
+            relacionamentos.</li>
+          <li>O que é segurança em Banco de Dados? apresentar os mecanismos utilizados para proteger informações
+            armazenadas.</li>
+          <li>Principais riscos: discutir situações como vazamentos, ataques cibernéticos, exclusão acidental e acessos
+            não autorizados.</li>
+          <li>Privacidade e responsabilidade: abordar a importância da proteção de dados pessoais e a relação com a Lei
+            Geral de Proteção de Dados (LGPD).</li>
+          <li>Possíveis medidas de proteção: apresentar recursos como senhas, permissões de acesso, criptografia,
+            backups e monitoramento.</li>
+          <li>Conclusão: destacar que a segurança deve fazer parte de todas as etapas de criação, utilização e
+            administração de um banco de dados.</li>
+        </ol>
+        <h4>Síntese das discussões</h4>
+        <p>A discussão evidencia que proteger um banco de dados não significa apenas impedir que pessoas desconhecidas
+          tenham acesso às informações. Também é necessário garantir que os dados permaneçam corretos, disponíveis e
+          acessíveis somente por pessoas autorizadas.<br>
+          <br>Outro ponto importante é que falhas de segurança podem ocorrer tanto por ataques externos quanto por erros
+          humanos, como a utilização de senhas fracas, permissões configuradas incorretamente ou ausência de cópias de
+          segurança.<br>
+          <br>Também foi considerada a importância da LGPD, legislação brasileira que estabelece regras para o
+          tratamento de dados pessoais. Empresas e instituições precisam adotar medidas para garantir que as informações
+          sejam utilizadas de maneira adequada e segura.
+        </p>
+        <h4>Perguntas para debate</h4>
+        <ul class="lista-padrao">
+          <li>Quais podem ser as consequências de um vazamento de dados pessoais?</li>
+          <li>Como uma empresa pode impedir que funcionários tenham acesso a informações que não são necessárias para
+            suas funções?</li>
+          <li>Por que realizar backups regularmente é importante?</li>
+          <li>Qual é a responsabilidade das empresas na proteção dos dados de seus clientes?</li>
+          <li>Como equilibrar facilidade de acesso, segurança e privacidade das informações?</li>
+        </ul>
+        <h4>Conclusão do seminário</h4>
+        <p>A segurança de bancos de dados é fundamental para garantir a confiabilidade dos sistemas e proteger as
+          informações armazenadas. A utilização de mecanismos de proteção, políticas de acesso e cópias de segurança
+          ajuda a reduzir riscos e evitar prejuízos.<br>
+          <br>Compreender esses cuidados é essencial para qualquer profissional que trabalhe com tecnologia, pois a
+          proteção das informações deve ser considerada desde o planejamento até a utilização de um banco de dados.
+        </p>
+      </div>
+      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="storytelling" class="secao-aba" role="tabpanel" aria-labelledby="titulo-storytelling">
+      <h2 id="titulo-storytelling">6. Storytelling</h2>
+      <div class="caixa-bloco">
+        <h3>Contexto — uma loja com milhares de informações</h3>
+        <p>Imagine uma loja virtual que realiza centenas de vendas diariamente. A empresa precisa armazenar informações
+          sobre clientes, produtos, pedidos, pagamentos e entregas. Todos esses dados são importantes para manter o
+          funcionamento da loja e garantir que os clientes recebam seus produtos corretamente.<br>
+          <br>No início, a empresa utilizava planilhas para registrar as vendas e controlar o estoque. Com o crescimento
+          do negócio, esse processo começou a apresentar dificuldades, como informações duplicadas, registros
+          desatualizados e demora para localizar determinados dados.
+        </p>
+        <h3>Conflito — o problema da organização das informações</h3>
+        <p>Em um dia de grande movimento, a loja recebe diversos pedidos ao mesmo tempo. Alguns produtos aparecem
+          disponíveis no site, mesmo depois de terem sido vendidos. Além disso, a equipe encontra dificuldades para
+          localizar o histórico de compras de determinados clientes.<br>
+          <br>A situação começa a gerar atrasos, reclamações e problemas no controle do estoque.<br><br>
+          O desafio não é apenas armazenar mais informações, mas garantir que elas estejam organizadas, atualizadas e
+          disponíveis quando forem necessárias.
+        </p>
+        <h3>Decisão — implementar um Banco de Dados</h3>
+        <p>A empresa decide implementar um Sistema Gerenciador de Banco de Dados (SGBD), utilizando o MySQL para
+          organizar suas informações.<br>
+          <br>Os dados passam a ser separados em tabelas relacionadas, como clientes, produtos, pedidos e pagamentos.
+          Cada registro possui identificadores próprios, e os relacionamentos permitem conectar informações de
+          diferentes tabelas.<br>
+          <br>A equipe também utiliza comandos SQL para consultar pedidos, atualizar estoques, cadastrar novos clientes
+          e acompanhar as vendas realizadas.
+        </p>
+        <h3>Resultado — uma operação mais organizada</h3>
+        <p>Com a implementação do banco de dados, a empresa consegue centralizar suas informações e facilitar o
+          gerenciamento das operações.<br>
+          <br>O controle de estoque passa a ser atualizado conforme as vendas são realizadas, os funcionários conseguem
+          consultar o histórico de pedidos com mais facilidade e as informações dos clientes ficam organizadas em uma
+          estrutura centralizada.<br>
+          <br>Para verificar os benefícios da mudança, a empresa acompanha indicadores como quantidade de erros nos
+          registros, tempo necessário para localizar informações, divergências no estoque e velocidade de processamento
+          dos pedidos.<br>
+          <br>Os resultados devem ser avaliados após a implantação, considerando as condições anteriores e posteriores à
+          utilização do novo sistema.
+        </p>
+        <h3>Aprendizado</h3>
+        <p>A experiência demonstra que um banco de dados bem estruturado pode melhorar significativamente a organização
+          e o funcionamento de uma empresa. Entretanto, sua eficiência depende de um bom planejamento, da escolha
+          adequada das tecnologias e da manutenção das informações.<br>
+          <br>O principal aprendizado é que os bancos de dados não servem apenas para guardar informações. Eles permitem
+          relacionar, consultar, atualizar e administrar dados que são fundamentais para as atividades de uma
+          organização.
+        </p>
+        <h3>Questões para reflexão</h3>
+        <ul class="lista-padrao">
+          <li>Quais informações deveriam ser armazenadas no banco de dados dessa loja virtual?</li>
+          <li>Por que separar clientes, produtos e pedidos em tabelas diferentes pode facilitar a organização?</li>
+          <li>Qual seria o problema de permitir que dois clientes comprassem simultaneamente a última unidade de um
+            produto?</li>
+          <li>Como um sistema de backup poderia ajudar a empresa em caso de falha ou perda de informações?</li>
+          <li>Que outros setores poderiam utilizar bancos de dados para melhorar a organização de suas atividades?</li>
+        </ul>
+      </div>
+      <button type="button" class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <footer class="rodape">
+      <p>Banco de Dados</p>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

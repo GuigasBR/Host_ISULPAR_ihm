@@ -1,0 +1,496 @@
+
+/* ==========================================
+   CONFIGURAÇÕES GERAIS
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   CARTÃO PRINCIPAL
+========================================== */
+
+.pagina {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================
+   LINK VOLTAR
+========================================== */
+
+.voltar {
+    display: inline-block;
+    color: #2b6cb0;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+.cabecalho {
+    background-color: #1a365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 28px 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.cabecalho h1 {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+.cabecalho p {
+    font-size: 16px;
+}
+
+
+/* ==========================================
+   MENU PRINCIPAL
+========================================== */
+
+.menu-principal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: #edf2f7;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 28px;
+}
+
+.botao-menu {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #2b6cb0;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    padding: 9px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-menu:hover {
+    background-color: #dce8f5;
+}
+
+.botao-menu.ativo {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    border-color: #2b6cb0;
+}
+
+
+/* ==========================================
+   LISTA DE CONTEÚDOS
+========================================== */
+
+.lista-conteudos {
+    background-color: #ffffff;
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 28px;
+}
+
+.lista-conteudos h2 {
+    color: #1a365d;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.lista-conteudos a {
+    display: block;
+    color: #2b6cb0;
+    background-color: #f4f6f9;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 9px;
+}
+
+.lista-conteudos a:hover {
+    background-color: #e2eaf3;
+}
+
+
+/* ==========================================
+   CONTEÚDO PRINCIPAL
+========================================== */
+
+.conteudo-principal h2 {
+    color: #1a365d;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal h3 {
+    color: #1a365d;
+    font-size: 19px;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.conteudo-principal p {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.conteudo-principal ul {
+    padding-left: 22px;
+    margin-bottom: 18px;
+}
+
+.conteudo-principal li {
+    margin-bottom: 5px;
+}
+
+.conteudo-principal ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+
+/* ==========================================
+   BOTÃO VOLTAR AO TOPO
+========================================== */
+
+.voltar-topo {
+    background-color: #edf2f7;
+    color: #2b6cb0;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    padding: 9px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.voltar-topo:hover {
+    background-color: #dce8f5;
+}
+
+
+/* ==========================================
+   LINHA DIVISÓRIA
+========================================== */
+
+.conteudo-principal hr {
+    border: none;
+    border-top: 1px solid #dce3ec;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   IMAGENS DOS DIAGRAMAS
+========================================== */
+
+.figura-diagrama {
+    margin: 25px auto;
+    padding: 15px;
+    background-color: #f4f6f9;
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.imagem-diagrama {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.figura-diagrama figcaption {
+    color: #555555;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+
+/* ==========================================
+   ESTILIZAÇÃO DO QUIZ
+========================================== */
+
+/* Área geral do quiz */
+
+#area-quiz {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #dce3ec;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Progresso das questões */
+
+.quiz-progresso {
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e5eaf0;
+}
+
+.quiz-progresso p {
+    color: #52647a;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+/* Enunciado da pergunta */
+
+.questao-quiz h3 {
+    color: #24466b;
+    font-size: 21px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+
+/* Organização das alternativas */
+
+.alternativas-quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* Cada alternativa */
+
+.alternativa-quiz {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: #f4f6f9;
+    border: 1px solid #dce3ec;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    line-height: 1.5;
+}
+
+.alternativa-quiz:hover {
+    background-color: #eaf1f8;
+    border-color: #668bb5;
+}
+
+.alternativa-quiz:has(input:checked) {
+    background-color: #e4edf8;
+    border-color: #315f91;
+}
+
+.alternativa-quiz input {
+    accent-color: #315f91;
+    width: 17px;
+    height: 17px;
+    flex-shrink: 0;
+}
+
+
+/* Mensagem após responder */
+
+#mensagem-quiz {
+    margin-top: 18px;
+    font-weight: bold;
+    color: #24466b;
+    line-height: 1.5;
+}
+
+
+/* Resultado final */
+
+.resultado-quiz {
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.resultado-quiz h3 {
+    color: #24466b;
+    font-size: 26px;
+}
+
+.resultado-quiz h2 {
+    color: #315f91;
+    font-size: 28px;
+    margin: 25px 0;
+}
+
+.resultado-quiz p {
+    line-height: 1.6;
+}
+
+
+/* Botão de refazer o quiz */
+
+#botao-reiniciar {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    background-color: #315f91;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#botao-reiniciar:hover {
+    background-color: #24466b;
+}
+
+
+/* ==========================================
+   MENU DE NAVEGAÇÃO DO CABEÇALHO
+========================================== */
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+header nav a,
+header nav button {
+    display: inline-block;
+    padding: 9px 16px;
+    background-color: #315f91;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+header nav a:hover,
+header nav button:hover {
+    background-color: #24466b;
+}
+
+
+/* Lista expansível de conteúdos */
+
+#lista-conteudos {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 0;
+}
+
+#lista-conteudos[hidden] {
+    display: none;
+}
+
+#lista-conteudos a {
+    background-color: transparent;
+    color: #315f91;
+    padding: 6px 10px;
+}
+
+#lista-conteudos a:hover {
+    background-color: #e4edf8;
+}
+
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .pagina {
+        margin: 10px;
+        padding: 18px;
+    }
+
+    .cabecalho h1 {
+        font-size: 24px;
+    }
+
+    .menu-principal {
+        gap: 8px;
+    }
+
+    .botao-menu {
+        padding: 9px 12px;
+    }
+
+    .conteudo-principal h2 {
+        font-size: 21px;
+    }
+
+    #area-quiz {
+        padding: 20px;
+        margin: 25px 10px;
+    }
+
+    .questao-quiz h3 {
+        font-size: 18px;
+    }
+
+    .alternativa-quiz {
+        padding: 13px;
+    }
+
+    #botao-reiniciar {
+        width: 100%;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    header nav a,
+    header nav button {
+        padding: 9px 12px;
+    }
+
+}

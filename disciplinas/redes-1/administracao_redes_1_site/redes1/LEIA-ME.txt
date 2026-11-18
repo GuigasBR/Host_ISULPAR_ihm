@@ -1,0 +1,12 @@
+ADMINISTRAÇÃO DE REDES I
+
+1. Extraia o arquivo ZIP.
+2. Abra a pasta redes1 no Visual Studio Code.
+3. Abra index.html no navegador (ou use a extensão Live Server).
+4. Edite index.html para mudar a estrutura e os textos principais.
+5. Edite style.css para mudar cores, espaçamento e aparência.
+6. Edite script.js para mudar os módulos, abas e a atividade interativa.
+
+Não precisa instalar XAMPP, banco de dados ou bibliotecas.
+O botão Voltar ao início retorna ao topo deste site; para voltar ao grid da turma, substitua seu href pelo endereço real do grid.
+A ementa e o seminário são exemplos propostos, não documentos oficiais.

@@ -3,17 +3,17 @@ export class ProjetoModel {
     this.projetos = [
       {
         id: 1,
-        nome: "Banco de Dados",
-        equipe: "Espaço reservado para a equipe",
-        status: "reservado",
-        url: null
+        nome: "Interação Humano-Computador",
+        equipe: "Edinei, Guilherme e Equipe",
+        status: "publicado",
+        url: "disciplinas/disciplina-ihm.html"
       },
       {
         id: 2,
         nome: "Engenharia de Software",
-        equipe: "Espaço reservado para a equipe",
-        status: "reservado",
-        url: null
+        equipe: "Maria Luísa e Matheus Scremim",
+        status: "publicado",
+        url: "disciplinas/engenharia/Engenharia_de_software/disciplina-2.html"
       },
       {
         id: 3,
@@ -32,16 +32,16 @@ export class ProjetoModel {
       {
         id: 5,
         nome: "Sistemas Operacionais",
-        equipe: "Espaço reservado para a equipe",
-        status: "reservado",
-        url: null
+        equipe: "Yuri Cesar e João Gabriel",
+        status: "publicado",
+        url: "disciplinas/sistemas_operacionais/disciplina-5.html"
       },
       {
         id: 6,
-        nome: "Estrutura de Dados",
-        equipe: "Espaço reservado para a equipe",
-        status: "reservado",
-        url: null
+        nome: "Administração de Redes I",
+        equipe: "João Pedro e Ricardo",
+        status: "publicado",
+        url: "disciplinas/redes-1/administracao_redes_1_site/redes1/index.html"
       },
       {
         id: 7,
@@ -65,18 +65,18 @@ export class ProjetoModel {
         url: "disciplinas/disciplina-9.html"
       },
       {
-        id: 10, // Mantenha o número do ID que você atribuiu ao card
+        id: 10,
         nome: "Redes de Computadores 2",
         equipe: "Miguel Colodel, Nykollas Armindo e Vitor Brunetto",
         status: "publicado",
-        url: "disciplinas/redes-2/redes.html" // Ou "disciplinas/redes.html" se colocar direto na pasta disciplinas
+        url: "disciplinas/redes-2/redes.html"
       },
       {
         id: 11,
-        nome: "Redes de Computadores 2",
-        equipe: "Espaço reservado para a equipe",
-        status: "reservado",
-        url: null
+        nome: "Banco de Dados",
+        equipe: "Daniel Correa e Alan Alipio",
+        status: "publicado",
+        url: "disciplinas/banco_de_dados/index.html"
       }
     ];
   }

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz - Engenharia de Software</title>
+
+    <link rel="stylesheet" href="../css/engenharia.css">
+</head>
+
+<body>
+
+    <div class="pagina">
+
+        <!-- LINK PARA VOLTAR -->
+        <a href="../disciplina-2.html" class="voltar">
+            ← Voltar à Engenharia de Software
+        </a>
+
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+
+            <h1>Engenharia de Software</h1>
+
+            <p>Disciplina 2 — Base de Conhecimento Acadêmica</p>
+
+        </header>
+
+
+        <!-- MENU PRINCIPAL -->
+        <div class="menu-principal">
+
+            <a href="../disciplina-2.html" class="botao-menu">
+                Introdução
+            </a>
+
+            <button
+                type="button"
+                id="botao-conteudos"
+                class="botao-menu"
+                aria-expanded="false"
+                aria-controls="lista-conteudos">
+
+                Conteúdos ▼
+
+            </button>
+
+            <a href="quiz.html" class="botao-menu ativo">
+                Quiz
+            </a>
+
+        </div>
+
+
+        <!-- LISTA DE CONTEÚDOS -->
+        <div id="lista-conteudos"
+             class="lista-conteudos"
+             hidden>
+
+            <h2>Conteúdos de Engenharia de Software</h2>
+
+            <a href="ciclo-de-vida.html">
+                Ciclo de Vida e Processos
+            </a>
+
+            <a href="requisitos.html">
+                Engenharia de Requisitos
+            </a>
+
+            <a href="modelagem-uml.html">
+                Modelagem e UML
+            </a>
+
+            <a href="metodologias.html">
+                Metodologias de Desenvolvimento
+            </a>
+
+        </div>
+
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo-principal">
+
+            <h2>Quiz de Engenharia de Software</h2>
+
+            <p>
+                Teste seus conhecimentos sobre os conteúdos estudados.
+                Responda às questões e descubra seu desempenho!
+            </p>
+
+            <!-- PERGUNTAS INSERIDAS PELO JAVASCRIPT -->
+            <section id="area-quiz">
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../js/engenharia.js"></script>
+
+</body>
+
+</html>

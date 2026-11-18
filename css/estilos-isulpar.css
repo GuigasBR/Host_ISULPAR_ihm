@@ -1,0 +1,623 @@
+:root {
+  color-scheme: light;
+  --isulpar-navy: #0b2138;
+  --isulpar-navy-soft: #153b5d;
+  --isulpar-blue: #0052a3;
+  --isulpar-blue-hover: #003f7d;
+  --isulpar-gold: #f4bf18;
+  --isulpar-gold-light: #fff4c7;
+  --page: #f3f6f9;
+  --surface: #ffffff;
+  --text: #172432;
+  --muted: #536273;
+  --line: #d8e0e8;
+  --radius-card: 18px;
+  --shadow-card: 0 12px 32px rgba(11, 33, 56, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  background: var(--page);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: var(--isulpar-blue);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--isulpar-gold);
+  outline-offset: 3px;
+}
+
+.container-principal {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+/* Identidade institucional: azul profundo, branco e amarelo ISULPAR. */
+.cabecalho-principal {
+  display: grid;
+  grid-template-columns: minmax(170px, 220px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  width: 100%;
+  margin: 0 auto 2rem;
+  padding: clamp(1.75rem, 4.5vw, 3.5rem) max(1rem, calc((100vw - 1120px) / 2));
+  border-bottom: 5px solid var(--isulpar-gold);
+  color: #fff;
+  background:
+    radial-gradient(circle at 86% 8%, rgba(244, 191, 24, 0.14), transparent 18rem),
+    linear-gradient(120deg, var(--isulpar-navy) 0%, var(--isulpar-navy-soft) 100%);
+}
+
+.marca-isulpar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+.marca-isulpar img {
+  display: block;
+  width: min(180px, 100%);
+  height: auto;
+  object-fit: contain;
+}
+
+.cabecalho-texto {
+  min-width: 0;
+}
+
+.cabecalho-selo {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  color: var(--isulpar-gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.cabecalho-principal h1,
+.cabecalho-disciplina h1 {
+  max-width: 18ch;
+  color: #fff;
+  font-size: clamp(2rem, 4.6vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+}
+
+.cabecalho-principal .cabecalho-texto > p:last-child,
+.cabecalho-disciplina .cabecalho-texto > p:last-child {
+  max-width: 65ch;
+  margin-top: 0.9rem;
+  color: #e4ebf2;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+}
+
+main.container-principal {
+  padding-bottom: 1rem;
+}
+
+/* Filtros e botões */
+.menu-abas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 1.5rem 0 1.75rem;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: 0 6px 20px rgba(11, 33, 56, 0.045);
+}
+
+.menu-abas.centralizado {
+  justify-content: center;
+}
+
+.botao-aba {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--isulpar-navy);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.botao-aba:hover {
+  border-color: var(--isulpar-blue);
+  background: #edf5fc;
+  color: var(--isulpar-blue);
+}
+
+.botao-aba.ativo {
+  border-color: var(--isulpar-navy);
+  background: var(--isulpar-navy);
+  box-shadow: inset 0 -3px 0 var(--isulpar-gold);
+  color: #fff;
+}
+
+/* Cartões de projetos */
+#grade {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.15rem;
+  margin-bottom: 2.75rem;
+}
+
+.cartao {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--isulpar-blue);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  text-align: left;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.cartao:hover {
+  transform: translateY(-4px);
+  border-top-color: var(--isulpar-gold);
+  box-shadow: 0 18px 36px rgba(11, 33, 56, 0.13);
+}
+
+.cartao.cartao-reservado {
+  border-top-color: #a8b6c4;
+  background: #fbfcfd;
+}
+
+.cartao-topo {
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.badge-ativo {
+  border-color: #b8d8f4;
+  background: #eaf4ff;
+  color: #064b85;
+}
+
+.badge-reservado {
+  border-color: #d8e0e8;
+  background: #eff2f5;
+  color: #465564;
+}
+
+.cartao h3 {
+  margin-bottom: 0.45rem;
+  color: var(--isulpar-navy);
+  font-size: 1.22rem;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+
+.cartao-equipe {
+  margin-bottom: 1.35rem;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.cartao-rodape {
+  margin-top: auto;
+}
+
+.btn-primario,
+.btn-desabilitado {
+  display: flex;
+  width: 100%;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border-radius: 9px;
+  font-weight: 750;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.btn-primario {
+  border: 1px solid var(--isulpar-blue);
+  background: var(--isulpar-blue);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.btn-primario:hover {
+  transform: translateY(-1px);
+  border-color: var(--isulpar-blue-hover);
+  background: var(--isulpar-blue-hover);
+}
+
+.btn-desabilitado {
+  border: 1px dashed #c4ced8;
+  background: #eef1f4;
+  color: #465564;
+  cursor: not-allowed;
+  font-size: 0.9rem;
+}
+
+/* Área de orientação aos alunos */
+.painel-instrucoes {
+  margin: 0 0 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--isulpar-gold);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.painel-cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.painel-cabecalho h2 {
+  color: var(--isulpar-navy);
+  font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+  line-height: 1.3;
+}
+
+.painel-instrucoes > p {
+  color: #354454;
+}
+
+.btn-secundario {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--isulpar-blue);
+  border-radius: 9px;
+  background: #fff;
+  color: var(--isulpar-blue);
+  font-size: 0.92rem;
+  font-weight: 750;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.btn-secundario:hover {
+  background: var(--isulpar-blue);
+  color: #fff;
+}
+
+.bloco-codigo-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow-x: auto;
+  margin-top: 1.1rem;
+  padding: 1.15rem;
+  border: 1px solid #203a54;
+  border-radius: 12px;
+  background: #0b1c2d;
+  color: #edf3f8;
+}
+
+.bloco-codigo-wrapper pre {
+  overflow-x: auto;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+#btn-copiar-modelo {
+  flex: 0 0 auto;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: #163b5c;
+  color: #fff;
+}
+
+#btn-copiar-modelo:hover {
+  border-color: var(--isulpar-gold);
+  background: #214d70;
+  color: #fff;
+}
+
+/* Página da disciplina */
+.conteudo {
+  width: min(980px, calc(100% - 2rem));
+  margin: clamp(1rem, 4vw, 3rem) auto;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.link-voltar {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--isulpar-blue);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.link-voltar:hover {
+  color: var(--isulpar-blue-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cabecalho-disciplina {
+  grid-template-columns: 190px minmax(0, 1fr);
+  margin: 0 0 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border-radius: 16px;
+}
+
+.cabecalho-disciplina h1 {
+  font-size: clamp(1.75rem, 4vw, 2.6rem);
+}
+
+.secao-aba {
+  display: none;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 1rem;
+}
+
+.secao-aba.ativa {
+  display: block;
+}
+
+.secao-aba h2,
+.secao-aba h3 {
+  color: var(--isulpar-navy);
+}
+
+.secao-aba h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  line-height: 1.3;
+}
+
+.secao-aba h3 {
+  margin: 1.5rem 0 0.6rem;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+
+.secao-aba h4 {
+  margin: 1.2rem 0 0.45rem;
+  color: #174d79;
+  font-size: 1.02rem;
+}
+
+.secao-aba p {
+  margin-bottom: 0.8rem;
+  color: #354454;
+}
+
+.lista-padrao {
+  margin: 0.65rem 0 1rem 1.4rem;
+  padding-left: 0.3rem;
+}
+
+.lista-padrao li {
+  margin-bottom: 0.45rem;
+  padding-left: 0.15rem;
+}
+
+.caixa-destaque,
+.caixa-bloco {
+  margin: 1.2rem 0;
+  padding: clamp(1rem, 2.5vw, 1.35rem);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f7f9fb;
+}
+
+.caixa-destaque {
+  border-left: 4px solid var(--isulpar-gold);
+}
+
+.btn-topo {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: #eef3f7;
+  color: var(--isulpar-blue);
+  cursor: pointer;
+  font-weight: 750;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.btn-topo:hover {
+  border-color: #b8c9d9;
+  background: #e1ebf3;
+}
+
+.rodape {
+  margin-top: 2.5rem;
+  padding: 1.5rem 1rem;
+  border-top: 4px solid var(--isulpar-gold);
+  background: var(--isulpar-navy);
+  color: #f0f4f8;
+  font-size: 0.94rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .cabecalho-principal {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 1.5rem 1rem 1.8rem;
+  }
+
+  .cabecalho-principal h1 {
+    font-size: clamp(1.9rem, 9vw, 2.8rem);
+  }
+
+  #grade {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+  }
+
+  .menu-abas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
+    padding: 0.7rem;
+  }
+
+  .menu-abas .botao-aba {
+    width: 100%;
+  }
+
+  .painel-cabecalho {
+    align-items: flex-start;
+  }
+
+  .bloco-codigo-wrapper {
+    flex-direction: column;
+  }
+
+  .bloco-codigo-wrapper pre {
+    width: 100%;
+  }
+
+  .cabecalho-disciplina {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .conteudo {
+    width: min(calc(100% - 1rem), 980px);
+    padding: 0.75rem;
+    border-radius: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* Ajustes da página IHM ao cabeçalho institucional e botão de retorno */
+.cabecalho-disciplina {
+  display: grid;
+  align-items: center;
+}
+
+.link-voltar {
+  min-height: 44px;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.65rem 1rem;
+  border: 1px solid var(--isulpar-blue);
+  border-radius: 9px;
+  background: #fff;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.link-voltar:hover {
+  border-color: var(--isulpar-blue-hover);
+  background: var(--isulpar-blue);
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .menu-abas {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 380px) {
+  .menu-abas {
+    grid-template-columns: 1fr;
+  }
+}

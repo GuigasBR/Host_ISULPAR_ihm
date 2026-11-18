@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,235 +8,246 @@
     <link rel="stylesheet" href="redes.css">
     <script src="redes.js" defer></script>
 </head>
+
 <body>
 
-<main class="redes-page">
+    <main class="redes-page">
 
-    <header class="hero">
-        <div class="hero-content">
-            <span class="tag">TECNOLOGIA DA INFORMAÇÃO</span>
+        <a href="../../index.html" class="link-voltar"
+            style="display:inline-block; padding: 10px 20px; margin: 20px; font-weight: bold; background-color: #1d4370; color: #ffffff; border-radius: 6px; text-decoration: none; font-family: sans-serif; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">
+            ← Voltar ao Portal
+        </a>
 
-            <h1>Administração de Redes II</h1>
+        <header class="hero">
+            <div class="hero-content">
+                <span class="tag">TECNOLOGIA DA INFORMAÇÃO</span>
 
-            <p>
-                Explore conceitos de infraestrutura, configuração de IP,
-                roteadores e redes de computadores.
-            </p>
+                <h1>Administração de Redes II</h1>
 
-            <a href="#conteudos" class="btn-primary">
-                Explorar conteúdos
-            </a>
-        </div>
-
-        <div class="hero-visual">
-            <div class="network-icon">🌐</div>
-            <div class="network-line"></div>
-            <div class="network-label">NETWORK SYSTEM</div>
-        </div>
-    </header>
-
-    <section class="container" id="conteudos">
-
-        <div class="section-title">
-            <span>APRENDIZADO</span>
-            <h2>Conteúdos da disciplina</h2>
-            <p>Selecione um assunto para começar a estudar.</p>
-        </div>
-
-        <div class="cards">
-
-            <article class="card">
-                <div class="card-icon">🌐</div>
-                <span class="card-number">01 / ENDEREÇAMENTO</span>
-                <h3>Configuração de IP</h3>
                 <p>
-                    Aprenda sobre IPv4, IPv6, máscaras de sub-rede,
-                    gateway e endereçamento.
+                    Explore conceitos de infraestrutura, configuração de IP,
+                    roteadores e redes de computadores.
                 </p>
-                <button data-aula="ip">Acessar conteúdo →</button>
-            </article>
 
-            <article class="card">
-                <div class="card-icon">📡</div>
-                <span class="card-number">02 / INFRAESTRUTURA</span>
-                <h3>Roteadores</h3>
+                <a href="#conteudos" class="btn-primary">
+                    Explorar conteúdos
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="network-icon">🌐</div>
+                <div class="network-line"></div>
+                <div class="network-label">NETWORK SYSTEM</div>
+            </div>
+        </header>
+
+        <section class="container" id="conteudos">
+
+            <div class="section-title">
+                <span>APRENDIZADO</span>
+                <h2>Conteúdos da disciplina</h2>
+                <p>Selecione um assunto para começar a estudar.</p>
+            </div>
+
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card-icon">🌐</div>
+                    <span class="card-number">01 / ENDEREÇAMENTO</span>
+                    <h3>Configuração de IP</h3>
+                    <p>
+                        Aprenda sobre IPv4, IPv6, máscaras de sub-rede,
+                        gateway e endereçamento.
+                    </p>
+                    <button data-aula="ip">Acessar conteúdo →</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">📡</div>
+                    <span class="card-number">02 / INFRAESTRUTURA</span>
+                    <h3>Roteadores</h3>
+                    <p>
+                        Entenda o funcionamento dos roteadores,
+                        tabelas e protocolos de roteamento.
+                    </p>
+                    <button data-aula="roteadores">Acessar conteúdo →</button>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🖧</div>
+                    <span class="card-number">03 / CONECTIVIDADE</span>
+                    <h3>Redes de computadores</h3>
+                    <p>
+                        Conheça topologias, protocolos e equipamentos
+                        utilizados em redes.
+                    </p>
+                    <button data-aula="redes">Acessar conteúdo →</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="container lesson-section" id="aulas">
+
+            <div class="section-title">
+                <span>MATERIAL DIDÁTICO</span>
+                <h2>Área de estudos</h2>
+                <p>Conteúdos explicados de forma simples e objetiva.</p>
+            </div>
+
+            <div class="lesson-box" id="conteudo-aula">
+                <div class="lesson-placeholder">📚</div>
+                <h3>Escolha um conteúdo para começar</h3>
                 <p>
-                    Entenda o funcionamento dos roteadores,
-                    tabelas e protocolos de roteamento.
+                    Selecione um dos três módulos acima para visualizar
+                    as explicações.
                 </p>
-                <button data-aula="roteadores">Acessar conteúdo →</button>
-            </article>
+            </div>
 
-            <article class="card">
-                <div class="card-icon">🖧</div>
-                <span class="card-number">03 / CONECTIVIDADE</span>
-                <h3>Redes de computadores</h3>
-                <p>
-                    Conheça topologias, protocolos e equipamentos
-                    utilizados em redes.
-                </p>
-                <button data-aula="redes">Acessar conteúdo →</button>
-            </article>
+        </section>
 
-        </div>
-    </section>
+        <section class="container">
 
-    <section class="container lesson-section" id="aulas">
+            <div class="section-title">
+                <span>PRÁTICA</span>
+                <h2>Simulador de endereço IP</h2>
+                <p>Teste uma configuração básica de rede.</p>
+            </div>
 
-        <div class="section-title">
-            <span>MATERIAL DIDÁTICO</span>
-            <h2>Área de estudos</h2>
-            <p>Conteúdos explicados de forma simples e objetiva.</p>
-        </div>
+            <div class="simulator">
 
-        <div class="lesson-box" id="conteudo-aula">
-            <div class="lesson-placeholder">📚</div>
-            <h3>Escolha um conteúdo para começar</h3>
-            <p>
-                Selecione um dos três módulos acima para visualizar
-                as explicações.
-            </p>
-        </div>
-
-    </section>
-
-    <section class="container">
-
-        <div class="section-title">
-            <span>PRÁTICA</span>
-            <h2>Simulador de endereço IP</h2>
-            <p>Teste uma configuração básica de rede.</p>
-        </div>
-
-        <div class="simulator">
-
-            <div class="simulator-heading">
-                <div>
-                    <span class="small-label">FERRAMENTA INTERATIVA</span>
-                    <h3>Verificação de rede</h3>
+                <div class="simulator-heading">
+                    <div>
+                        <span class="small-label">FERRAMENTA INTERATIVA</span>
+                        <h3>Verificação de rede</h3>
+                    </div>
+                    <span class="simulator-icon">⌘</span>
                 </div>
-                <span class="simulator-icon">⌘</span>
+
+                <div class="input-group">
+                    <label for="ip">Endereço IP</label>
+                    <input type="text" id="ip" placeholder="192.168.1.10" inputmode="numeric" maxlength="15"
+                        autocomplete="off">
+                </div>
+
+                <div class="input-group">
+                    <label for="mascara">Máscara de sub-rede</label>
+                    <input type="text" id="mascara" value="255.255.255.0" readonly
+                        aria-label="Máscara de sub-rede automática">
+                </div>
+
+                <div class="input-group">
+                    <label for="gateway">Gateway</label>
+                    <input type="text" id="gateway" placeholder="192.168.1.1" inputmode="numeric" maxlength="15"
+                        autocomplete="off">
+                </div>
+
+                <button id="verificar-ip">Verificar configuração</button>
+
+                <div id="resultado-ip" class="result"></div>
+
             </div>
 
-            <div class="input-group">
-                <label for="ip">Endereço IP</label>
-                <input type="text" id="ip" placeholder="192.168.1.10" inputmode="numeric" maxlength="15" autocomplete="off">
+        </section>
+
+        <section class="container knowledge-section" id="conhecimentos">
+
+            <div class="section-title">
+                <span>APROFUNDE SEUS ESTUDOS</span>
+                <h2>Mais conhecimentos</h2>
+                <p>Explore outros conceitos importantes para administrar e manter redes de computadores.</p>
             </div>
 
-            <div class="input-group">
-                <label for="mascara">Máscara de sub-rede</label>
-                <input type="text" id="mascara" value="255.255.255.0" readonly aria-label="Máscara de sub-rede automática">
+            <div class="cards knowledge-cards">
+                <article class="card">
+                    <div class="card-icon">🛡️</div>
+                    <span class="card-number">04 / SEGURANÇA</span>
+                    <h3>Segurança de redes</h3>
+                    <p>Conheça práticas para proteger dispositivos, dados e serviços contra acessos não autorizados.</p>
+                    <ul class="knowledge-list">
+                        <li>Firewall e filtragem de tráfego</li>
+                        <li>Criptografia e autenticação</li>
+                        <li>Atualizações e controle de acesso</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🔌</div>
+                    <span class="card-number">05 / SERVIÇOS</span>
+                    <h3>Protocolos de rede</h3>
+                    <p>Entenda como os protocolos organizam a comunicação entre computadores e servidores.</p>
+                    <ul class="knowledge-list">
+                        <li>DNS: tradução de nomes em IP</li>
+                        <li>DHCP: configuração automática</li>
+                        <li>HTTP, HTTPS, TCP e UDP</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🧩</div>
+                    <span class="card-number">06 / ARQUITETURA</span>
+                    <h3>Modelo OSI e TCP/IP</h3>
+                    <p>Estude as camadas que dividem as funções da comunicação em uma rede.</p>
+                    <ul class="knowledge-list">
+                        <li>As sete camadas do modelo OSI</li>
+                        <li>Encapsulamento de dados</li>
+                        <li>Relação entre OSI e TCP/IP</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🧵</div>
+                    <span class="card-number">07 / MEIOS FÍSICOS</span>
+                    <h3>Cabos e equipamentos</h3>
+                    <p>Veja como os componentes físicos formam a infraestrutura de uma rede local.</p>
+                    <ul class="knowledge-list">
+                        <li>Cabo de par trançado e fibra óptica</li>
+                        <li>Conectores RJ-45 e padrões Ethernet</li>
+                        <li>Switches, hubs e pontos de acesso</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">📶</div>
+                    <span class="card-number">08 / CONECTIVIDADE</span>
+                    <h3>Redes sem fio</h3>
+                    <p>Aprenda os fundamentos das conexões Wi-Fi e os cuidados na configuração.</p>
+                    <ul class="knowledge-list">
+                        <li>Padrões e frequências Wi-Fi</li>
+                        <li>SSID, canais e interferência</li>
+                        <li>Proteção WPA2 e WPA3</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <div class="card-icon">🧰</div>
+                    <span class="card-number">09 / DIAGNÓSTICO</span>
+                    <h3>Monitoramento e manutenção</h3>
+                    <p>Conheça ferramentas básicas para identificar falhas e acompanhar uma rede.</p>
+                    <ul class="knowledge-list">
+                        <li>Comandos ping e tracert</li>
+                        <li>ipconfig e ifconfig</li>
+                        <li>Latência, perda de pacotes e disponibilidade</li>
+                    </ul>
+                </article>
             </div>
 
-            <div class="input-group">
-                <label for="gateway">Gateway</label>
-                <input type="text" id="gateway" placeholder="192.168.1.1" inputmode="numeric" maxlength="15" autocomplete="off">
+            <div class="knowledge-note">
+                <strong>Dica de estudo</strong>
+                <p>Ao estudar cada assunto, procure relacionar a teoria com situações práticas: configuração de
+                    dispositivos, testes de conectividade e resolução de problemas.</p>
             </div>
 
-            <button id="verificar-ip">Verificar configuração</button>
+        </section>
 
-            <div id="resultado-ip" class="result"></div>
+        <footer class="footer-section">
+            <h2>Administração de Redes II</h2>
+            <p>Aprender, configurar e conectar.</p>
+            <p class="authors">Miguel Colodel · Nykollas Armindo · Vitor Brunetto</p>
+        </footer>
 
-        </div>
-
-    </section>
-
-    <section class="container knowledge-section" id="conhecimentos">
-
-        <div class="section-title">
-            <span>APROFUNDE SEUS ESTUDOS</span>
-            <h2>Mais conhecimentos</h2>
-            <p>Explore outros conceitos importantes para administrar e manter redes de computadores.</p>
-        </div>
-
-        <div class="cards knowledge-cards">
-            <article class="card">
-                <div class="card-icon">🛡️</div>
-                <span class="card-number">04 / SEGURANÇA</span>
-                <h3>Segurança de redes</h3>
-                <p>Conheça práticas para proteger dispositivos, dados e serviços contra acessos não autorizados.</p>
-                <ul class="knowledge-list">
-                    <li>Firewall e filtragem de tráfego</li>
-                    <li>Criptografia e autenticação</li>
-                    <li>Atualizações e controle de acesso</li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">🔌</div>
-                <span class="card-number">05 / SERVIÇOS</span>
-                <h3>Protocolos de rede</h3>
-                <p>Entenda como os protocolos organizam a comunicação entre computadores e servidores.</p>
-                <ul class="knowledge-list">
-                    <li>DNS: tradução de nomes em IP</li>
-                    <li>DHCP: configuração automática</li>
-                    <li>HTTP, HTTPS, TCP e UDP</li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">🧩</div>
-                <span class="card-number">06 / ARQUITETURA</span>
-                <h3>Modelo OSI e TCP/IP</h3>
-                <p>Estude as camadas que dividem as funções da comunicação em uma rede.</p>
-                <ul class="knowledge-list">
-                    <li>As sete camadas do modelo OSI</li>
-                    <li>Encapsulamento de dados</li>
-                    <li>Relação entre OSI e TCP/IP</li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">🧵</div>
-                <span class="card-number">07 / MEIOS FÍSICOS</span>
-                <h3>Cabos e equipamentos</h3>
-                <p>Veja como os componentes físicos formam a infraestrutura de uma rede local.</p>
-                <ul class="knowledge-list">
-                    <li>Cabo de par trançado e fibra óptica</li>
-                    <li>Conectores RJ-45 e padrões Ethernet</li>
-                    <li>Switches, hubs e pontos de acesso</li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">📶</div>
-                <span class="card-number">08 / CONECTIVIDADE</span>
-                <h3>Redes sem fio</h3>
-                <p>Aprenda os fundamentos das conexões Wi-Fi e os cuidados na configuração.</p>
-                <ul class="knowledge-list">
-                    <li>Padrões e frequências Wi-Fi</li>
-                    <li>SSID, canais e interferência</li>
-                    <li>Proteção WPA2 e WPA3</li>
-                </ul>
-            </article>
-
-            <article class="card">
-                <div class="card-icon">🧰</div>
-                <span class="card-number">09 / DIAGNÓSTICO</span>
-                <h3>Monitoramento e manutenção</h3>
-                <p>Conheça ferramentas básicas para identificar falhas e acompanhar uma rede.</p>
-                <ul class="knowledge-list">
-                    <li>Comandos ping e tracert</li>
-                    <li>ipconfig e ifconfig</li>
-                    <li>Latência, perda de pacotes e disponibilidade</li>
-                </ul>
-            </article>
-        </div>
-
-        <div class="knowledge-note">
-            <strong>Dica de estudo</strong>
-            <p>Ao estudar cada assunto, procure relacionar a teoria com situações práticas: configuração de dispositivos, testes de conectividade e resolução de problemas.</p>
-        </div>
-
-    </section>
-
-    <footer class="footer-section">
-        <h2>Administração de Redes II</h2>
-        <p>Aprender, configurar e conectar.</p>
-        <p class="authors">Miguel Colodel · Nykollas Armindo · Vitor Brunetto</p>
-    </footer>
-
-</main>
+    </main>
 
 </body>
+
 </html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Operacionais | Base de Conhecimento ISULPAR</title>
+  <meta name="description"
+    content="Base de conhecimento acadêmica da disciplina de Sistemas Operacionais no Portal de Projetos do ISULPAR.">
+  <meta name="theme-color" content="#0b2138">
+  <link rel="stylesheet" href="../css/estilos-isulpar.css">
+</head>
+
+<body>
+  <main class="conteudo" id="topo">
+
+    <a href="../../index.html" class="link-voltar"
+      style="display:inline-block; padding: 10px 15px; margin: 15px 20px; font-weight: bold; background-color: rgba(255,255,255,0.1); border-radius: 5px; text-decoration: none;">←
+      Voltar ao Portal</a>
+    <header class="cabecalho-principal cabecalho-disciplina">
+      <a class="marca-isulpar" href="../index.html" aria-label="Voltar ao portal de projetos">
+        <img src="https://isulpar.edu.br/_next/image?url=%2Fmedia%2Fwp%2Flogo-texto.png&amp;w=256&amp;q=72"
+          alt="ISULPAR - Grupo de Ensino">
+      </a>
+      <div class="cabecalho-texto">
+        <span class="cabecalho-selo">Grupo de Ensino ISULPAR</span>
+        <h1>Sistemas Operacionais</h1>
+        <p>Disciplina 5 — Base de Conhecimento Acadêmica</p>
+      </div>
+    </header>
+
+    <nav class="menu-abas" aria-label="Seções da disciplina">
+      <button class="botao-aba ativo" onclick="abrirAba('ementa', this)">Ementa</button>
+      <button class="botao-aba" onclick="abrirAba('artigos', this)">Artigos</button>
+      <button class="botao-aba" onclick="abrirAba('cases', this)">Cases</button>
+      <button class="botao-aba" onclick="abrirAba('videos', this)">Vídeos</button>
+      <button class="botao-aba" onclick="abrirAba('seminarios', this)">Seminários</button>
+      <button class="botao-aba" onclick="abrirAba('storytelling', this)">Storytelling</button>
+    </nav>
+
+    <section id="ementa" class="secao-aba ativa">
+      <h2>1. Ementa da Disciplina</h2>
+
+      <p>
+        Sistemas Operacionais é a área responsável pelo estudo dos fundamentos, da estrutura,
+        do funcionamento e da administração dos sistemas que fazem a ponte entre o hardware,
+        os programas e o usuário. Na disciplina, os conceitos são relacionados principalmente
+        à administração prática de ambientes Linux e à comparação de procedimentos com o Windows.
+      </p>
+
+      <div class="caixa-destaque">
+        <h3>Ementa oficial</h3>
+        <p><strong>Carga Horária:</strong> 80h</p>
+        <p>
+          Estudo dos conceitos fundamentais de sistemas operacionais, sua estrutura, funcionamento
+          e administração. Gerenciamento de processos, memória, dispositivos e sistemas de arquivos.
+          Configuração de hardware, gerenciamento de pacotes, níveis de execução e segurança no Linux.
+          Introdução ao Bash/Shell Script como ferramenta de automação. Discussão sobre desempenho e
+          boas práticas na utilização e administração de sistemas operacionais.
+        </p>
+      </div>
+
+      <h3>Objetivo Geral</h3>
+      <p>
+        Capacitar o estudante a compreender os princípios de funcionamento dos sistemas operacionais
+        e aplicar técnicas de administração e configuração em ambiente Linux e Windows, desenvolvendo
+        competências para análise, operação, automação e manutenção de sistemas.
+      </p>
+
+      <h3>Objetivos Específicos</h3>
+      <ul class="lista-padrao">
+        <li>Revisar os conceitos fundamentais de sistemas operacionais.</li>
+        <li>Configurar e verificar hardware em sistemas Linux.</li>
+        <li>Operar comandos básicos e avançados no terminal.</li>
+        <li>Gerenciar pacotes e níveis de execução no Linux e comparar com o Windows.</li>
+        <li>Desenvolver scripts em Bash para automação de tarefas.</li>
+        <li>Compreender a relação entre processos, memória e dispositivos.</li>
+        <li>Avaliar questões de segurança em sistemas operacionais.</li>
+        <li>Estimular a prática constante por meio de atividades laboratoriais.</li>
+      </ul>
+
+      <h3>Principais Tópicos Estudados</h3>
+      <ul class="lista-padrao">
+        <li><strong>Fundamentos:</strong> shell, processos, memória, dispositivos e sistemas de arquivos.</li>
+        <li><strong>Hardware:</strong> configuração e verificação de componentes em sistemas operacionais.</li>
+        <li><strong>Bash / Shell Script:</strong> utilização do terminal e automação de tarefas.</li>
+        <li><strong>Pacotes e níveis de execução:</strong> gerenciamento de software e operação do sistema.</li>
+        <li><strong>Processos e threads:</strong> criação, estados, escalonamento e monitoramento.</li>
+        <li><strong>Memória:</strong> partições, swapping, memória virtual e análise de consumo.</li>
+        <li><strong>Sistemas de arquivos:</strong> montagem, permissões, links e cotas.</li>
+        <li><strong>Segurança:</strong> usuários, grupos, permissões, auditoria, hardening e boas práticas.</li>
+        <li><strong>Automação:</strong> condições, laços e funções em scripts Bash.</li>
+      </ul>
+
+      <h3>Conteúdo Programático</h3>
+      <div class="caixa-destaque">
+        <h4>1º Bimestre — Fundamentos e Administração de SO</h4>
+        <ul class="lista-padrao">
+          <li>Introdução aos conceitos fundamentais de Sistemas Operacionais.</li>
+          <li>Shell, processos, memória, dispositivos e sistemas de arquivos.</li>
+          <li>Configuração e verificação de hardware e comandos práticos.</li>
+          <li>Introdução ao Bash / Shell Script.</li>
+          <li>Gerenciamento de pacotes e níveis de execução.</li>
+          <li>Processos e threads: criação, estados e escalonamento.</li>
+          <li>Monitoramento de processos com <code>ps</code>, <code>top</code>, <code>htop</code>, <code>jobs</code> e
+            <code>kill</code>.
+          </li>
+          <li>Gerenciamento de memória, swapping e memória virtual.</li>
+          <li>Análise de consumo de memória e tuning básico.</li>
+        </ul>
+
+        <h4>2º Bimestre — Automação, Segurança e Performance</h4>
+        <ul class="lista-padrao">
+          <li>Sistemas de arquivos: montagem, permissões, links e cotas.</li>
+          <li>Permissões, usuários e grupos.</li>
+          <li>Segurança em Sistemas Operacionais: usuários, permissões e auditoria.</li>
+          <li>Hardening e boas práticas de segurança.</li>
+          <li>Automação com Shell Script: condições, laços e funções.</li>
+          <li>Projeto final: criação de um script de administração automatizada.</li>
+        </ul>
+      </div>
+
+      <h3>Metodologia</h3>
+      <p>A disciplina combina teoria e prática por meio de:</p>
+      <ul class="lista-padrao">
+        <li>Aulas expositivas dialogadas.</li>
+        <li>Aulas práticas em laboratório de Linux.</li>
+        <li>Uso do terminal e de ferramentas de administração.</li>
+        <li>Resolução de exercícios e listas práticas.</li>
+        <li>Desenvolvimento de scripts Bash.</li>
+        <li>Estudo de casos reais de segurança e administração.</li>
+        <li>Projeto final integrando teoria e prática.</li>
+      </ul>
+
+      <h3>Bibliografia Básica</h3>
+      <ul class="lista-padrao">
+        <li>SILBERSCHATZ, A.; GALVIN, P. B.; GAGNE, G. <em>Fundamentos de Sistemas Operacionais</em>. 9. ed. Rio de
+          Janeiro: LTC, 2016.</li>
+        <li>TANENBAUM, A. S.; BOS, H. <em>Sistemas Operacionais Modernos</em>. 4. ed. São Paulo: Pearson, 2015.</li>
+        <li>NEMETH, E.; SNYDER, G.; HEIN, T. R.; WHALEY, B. <em>Unix and Linux System Administration Handbook</em>. 5th
+          ed. Pearson, 2017.</li>
+      </ul>
+
+      <button class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="artigos" class="secao-aba">
+      <h2>2. Artigos e Leituras</h2>
+      <p>
+        Esta seção reúne duas leituras de apoio, ambas de autores ligados ao ensino de Sistemas Operacionais
+        no Paraná. Elas complementam as aulas práticas de Linux com uma visão mais aprofundada sobre
+        funcionamento, administração e segurança dos sistemas operacionais.
+      </p>
+
+      <article class="caixa-destaque">
+        <h3>Leitura 1 — Sistemas Operacionais: Conceitos e Mecanismos</h3>
+        <p>
+          <strong>Referência:</strong> MAZIERO, Carlos Alberto. <em>Sistemas Operacionais: Conceitos e Mecanismos</em>.
+          Curitiba: DINF-UFPR, 2019. ISBN 978-85-7335-340-2.
+        </p>
+        <p>
+          Livro aberto (<em>open book</em>), distribuído gratuitamente em formato digital e licenciado em Creative
+          Commons (Atribuição-NãoComercial-CompartilhaIgual 3.0). O autor defende que conhecer sistemas operacionais a
+          fundo
+          é importante para todo profissional de computação, pois os mecanismos do sistema afetam diretamente o
+          comportamento e o desempenho das aplicações, além de serem peça-chave na configuração de serviços de rede e
+          na segurança.
+        </p>
+        <p><strong>Estrutura da obra (oito partes):</strong></p>
+        <ul class="lista-padrao">
+          <li><strong>Introdução:</strong> conceitos básicos, estrutura e arquiteturas de SOs.</li>
+          <li><strong>Gestão de tarefas:</strong> processos, threads, ciclo de vida e escalonamento.</li>
+          <li><strong>Interação entre tarefas:</strong> comunicação, coordenação, problemas clássicos e impasses.</li>
+          <li><strong>Gestão da memória:</strong> memória virtual, alocação, paginação em disco e <em>thrashing</em>.
+          </li>
+          <li><strong>Gestão de entrada/saída:</strong> hardware, software e dispositivos de armazenamento.</li>
+          <li><strong>Gestão de arquivos:</strong> conceito de arquivo, sistemas de arquivos e diretórios.</li>
+          <li><strong>Segurança:</strong> autenticação, controle de acesso e mecanismos de auditoria.</li>
+          <li><strong>Virtualização:</strong> conceito, tipos de máquinas virtuais e virtualização na prática.</li>
+        </ul>
+        <p>
+          <strong>Relação com a disciplina:</strong> as partes de gestão de tarefas, gestão da memória, gestão de
+          arquivos
+          e segurança acompanham diretamente os tópicos de processos e escalonamento, memória virtual e swapping,
+          sistemas de arquivos e permissões, e segurança e auditoria. Também ajudam a embasar o Case da LogiPar.
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>Leitura 2 — Sistemas Operacionais (Olsen e Laureano)</h3>
+        <p>
+          <strong>Referência:</strong> OLSEN, Diogo Roberto; LAUREANO, Marcos Aurélio Pchek. <em>Sistemas
+            Operacionais</em>.
+          Curitiba: Editora do Livro Técnico, 2010. 160 p. ISBN 978-85-63687-15-9.
+        </p>
+        <p>
+          Livro voltado aos cursos técnicos que combina teoria e prática em ambiente Linux. A apresentação da obra
+          destaca
+          a necessidade de profissionais capazes de aliar teoria e prática e de dominar o ambiente de trabalho, e por
+          isso
+          os exemplos e exercícios podem ser reaproveitados no dia a dia profissional. O capítulo introdutório define o
+          sistema operacional como o software situado entre o hardware e as aplicações, responsável por gerenciar os
+          recursos do sistema, e apresenta seus módulos: gerência do processador, de memória, de dispositivos, de
+          arquivos
+          e de proteção.
+        </p>
+        <p><strong>Capítulos da obra:</strong></p>
+        <ul class="lista-padrao">
+          <li>Introdução, Sistemas Operacionais Atuais e Estudo de Caso (Linux).</li>
+          <li>Comandos Básicos e Sistema de Arquivos.</li>
+          <li>Sistemas de Arquivos e Segurança (permissões e integridade).</li>
+          <li>Máquinas Virtuais e Administração de Usuários.</li>
+          <li>O Sistema de Arquivos <code>/procfs</code> e Gerência de Processos (prioridades, escalonamento e ciclo de
+            vida).</li>
+        </ul>
+        <p>
+          <strong>Relação com a disciplina:</strong> os capítulos de comandos básicos, permissões, administração de
+          usuários e gerência de processos dialogam com as aulas práticas de terminal, permissões, usuários e grupos e
+          monitoramento de processos.
+        </p>
+      </article>
+
+      <button class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="cases" class="secao-aba">
+      <h2>3. Cases de Sistemas Operacionais</h2>
+
+      <article class="caixa-destaque" id="case-logipar">
+        <h3>Case 1 — Lentidão e invasão no servidor da LogiPar</h3>
+
+        <h4>Contexto</h4>
+        <p>
+          A LogiPar é uma transportadora de médio porte com sede em Paranaguá/PR. Ela mantém um servidor
+          Linux (Ubuntu Server, 4 GB de RAM, 2 vCPUs) que hospeda o sistema de rastreamento de cargas e um
+          banco de dados, acessados o dia todo por motoristas e clientes. <em>(Case fictício, elaborado para
+            fins didáticos.)</em>
+        </p>
+
+        <h4>Situação</h4>
+        <p>
+          Em uma segunda-feira, o analista de TI recebe várias reclamações de lentidão. Ao acessar o
+          servidor via SSH, ele observa:
+        </p>
+        <ul class="lista-padrao">
+          <li>O comando <code>top</code> mostra carga média (<em>load average</em>) acima de 12, em um servidor com
+            apenas 2 CPUs.</li>
+          <li>Um processo desconhecido, <code>kworker-update</code>, consome 95% de CPU e é executado pelo usuário
+            <code>backup</code>.
+          </li>
+          <li>O comando <code>free -h</code> mostra a RAM quase toda ocupada e a área de <em>swap</em> em uso intenso,
+            causando travamentos.</li>
+          <li>O arquivo <code>/var/log/auth.log</code> registra milhares de tentativas de login falhas via SSH durante o
+            fim de semana, seguidas de um login bem-sucedido do usuário <code>backup</code>.</li>
+          <li>O usuário <code>backup</code> tem senha fraca e a pasta <code>/etc</code> possui arquivos com permissão
+            <code>777</code>.
+          </li>
+          <li>Não existe nenhum script de monitoramento ou rotina de auditoria no servidor.</li>
+        </ul>
+
+        <h4>Tarefa do analista</h4>
+        <p>
+          Diagnosticar o problema, conter o incidente, corrigir as falhas e propor uma solução de
+          automação para evitar a recorrência.
+        </p>
+
+        <h4>Questões para discussão</h4>
+        <ol class="lista-padrao">
+          <li><strong>Processos e threads:</strong> como identificar e encerrar o processo suspeito? Qual a diferença
+            entre <code>kill</code> e <code>kill -9</code>, e por que investigar o processo antes de encerrá-lo
+            (<code>ps</code>, <code>lsof</code>, <code>/proc/&lt;PID&gt;</code>)?</li>
+          <li><strong>Escalonamento:</strong> por que o servidor ficou lento mesmo com outros processos legítimos em
+            execução? Como o escalonador distribui a CPU e o que <code>nice</code> e <code>renice</code> poderiam fazer?
+          </li>
+          <li><strong>Memória:</strong> o que significa o uso intenso de <em>swap</em>? Explique a relação entre memória
+            virtual, paginação e a degradação de desempenho (<em>thrashing</em>).</li>
+          <li><strong>Sistemas de arquivos e permissões:</strong> quais os riscos de arquivos com permissão
+            <code>777</code> em <code>/etc</code>? Como corrigir com <code>chmod</code> e <code>chown</code> aplicando o
+            princípio do menor privilégio?
+          </li>
+          <li><strong>Segurança:</strong> que medidas de hardening evitariam o ataque (política de senhas, autenticação
+            por chave SSH, bloqueio de login de contas de serviço, <code>fail2ban</code>, firewall)?</li>
+          <li><strong>Auditoria:</strong> como usar os logs (<code>auth.log</code>, <code>last</code>,
+            <code>journalctl</code>) para reconstruir a linha do tempo da invasão?
+          </li>
+          <li><strong>Automação:</strong> proponha um script Bash que, em intervalos regulares, verifique o uso de CPU e
+            memória, liste processos suspeitos e registre alertas.</li>
+        </ol>
+
+        <h4>Possível resolução</h4>
+        <ul class="lista-padrao">
+          <li><strong>Contenção:</strong> isolar o servidor da rede se necessário, bloquear a conta <code>backup</code>
+            (<code>usermod -L</code>) e encerrar o processo malicioso após coletar evidências.</li>
+          <li><strong>Correção:</strong> trocar senhas, restaurar as permissões corretas e remover persistência
+            (verificar <code>crontab</code>, serviços do <code>systemd</code> e <code>~/.ssh/authorized_keys</code>).
+          </li>
+          <li><strong>Prevenção:</strong> SSH com chave pública, <code>fail2ban</code>, <code>ufw</code>, atualizações
+            automáticas de pacotes e backups testados.</li>
+          <li><strong>Automação:</strong> script Bash agendado no <code>cron</code> que monitora recursos e gera um
+            relatório diário.</li>
+        </ul>
+
+        <p>
+          <strong>Objetivo:</strong> integrar processos, escalonamento, memória, permissões, segurança,
+          auditoria e automação em um único incidente, como acontece na administração real de servidores.
+        </p>
+      </article>
+
+      <button class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="videos" class="secao-aba">
+      <h2>4. Vídeos e Conteúdos Audiovisuais</h2>
+      <p>
+        Os dois vídeos abaixo são videoaulas introdutórias que ajudam a revisar o conceito de sistema operacional
+        e a conhecer os principais sistemas em uso, base para os tópicos de administração em Linux e a comparação
+        com o Windows estudados na disciplina.
+      </p>
+
+      <article class="caixa-destaque">
+        <h3>Vídeo 1: O que é um sistema operacional e exemplos (Informática Básica)</h3>
+        <p><strong>Canal:</strong> Eu TI Ensino</p>
+        <p>
+          <strong>Objetivo Didático:</strong> compreender o que é um sistema operacional, qual é o seu papel entre o
+          usuário e o hardware e quais são suas duas funções básicas: abstração e gerência de recursos.
+        </p>
+        <p>
+          <a class="btn-secundario" href="https://www.youtube.com/watch?v=yjfB-asZVF4" target="_blank"
+            rel="noopener noreferrer">Assistir ao vídeo no YouTube</a>
+        </p>
+        <h4>Resumo</h4>
+        <p>
+          O vídeo faz parte de uma série de informática básica e apresenta o sistema operacional como o software
+          essencial do computador. Ele é o primeiro programa executado quando a máquina é ligada e funciona como uma
+          ponte entre o usuário e o computador, gerenciando recursos como mouse, teclado, memória e os programas em
+          execução. Sem ele, seria preciso dominar comandos e linguagens complexas para usar o computador.
+        </p>
+        <p>
+          São citados exemplos de sistemas operacionais: Windows, Linux e macOS para computadores, iOS para os iPhones
+          e Android para os demais smartphones. O vídeo explica então os dois objetivos do sistema operacional.
+          Na <strong>abstração</strong>, ele atua como intermediário entre o hardware e o software, de modo que os
+          desenvolvedores não precisam criar programas para cada configuração de equipamento. Os fabricantes fornecem
+          os <em>drivers</em>, que ensinam o sistema a lidar com cada dispositivo. Na <strong>gerência de
+            recursos</strong>,
+          ele distribui de forma justa o processador e a memória RAM entre as aplicações, controlando também
+          dispositivos como a impressora.
+        </p>
+        <p>
+          Por fim, o vídeo destaca que o sistema operacional não é um aplicativo comum, como o Word ou o Excel:
+          ele fica em operação desde que o computador é ligado até ser desligado.
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>Vídeo 2: Todos os Sistemas Operacionais Explicados em 9 minutos</h3>
+        <p><strong>Canal:</strong> DuarttHub</p>
+        <p>
+          <strong>Objetivo Didático:</strong> conhecer os principais sistemas operacionais em uso (Windows, macOS,
+          Linux, Chrome OS, Android, iOS, Unix e BSD), comparando origem, finalidade, vantagens e limitações de cada um.
+        </p>
+        <p>
+          <a class="btn-secundario" href="https://www.youtube.com/watch?v=OmNiJZ1Ip8g" target="_blank"
+            rel="noopener noreferrer">Assistir ao vídeo no YouTube</a>
+        </p>
+        <h4>Resumo</h4>
+        <p>
+          O vídeo percorre oito sistemas operacionais, mostrando que cada um foi criado com um propósito diferente.
+          O <strong>Windows</strong> (Microsoft, lançado em 1985) é o mais usado do mundo, compatível com PCs de várias
+          marcas e fácil para iniciantes, mas exige bastante do hardware e é o maior alvo de vírus e <em>malwares</em>.
+          O <strong>macOS</strong> (Apple, 2001) roda apenas em equipamentos da própria empresa, o que o torna estável e
+          bem integrado ao iPhone e ao iPad, porém mais caro e com limitações para jogos.
+        </p>
+        <p>
+          O <strong>Linux</strong>, criado em 1991 por Linus Torvalds, é uma família de distribuições gratuitas e de
+          código
+          aberto, leve e seguro, muito usado em programação, segurança cibernética e servidores, mas menos amigável
+          para iniciantes por depender de comandos de texto. O <strong>Chrome OS</strong> (Google, 2011) é um sistema
+          leve baseado na nuvem, comum em Chromebooks, que depende da internet e tem limitações com programas de
+          desktop pesados.
+        </p>
+        <p>
+          Entre os sistemas móveis, o <strong>Android</strong> (Google, de código aberto) é o mais popular e permite
+          muita personalização, mas nem todos os aparelhos recebem atualizações regulares. O <strong>iOS</strong>
+          (Apple) é exclusivo dos iPhones e iPads, com controle total de hardware e software, e é mais restritivo.
+          O <strong>Unix</strong>, um dos mais antigos (final dos anos 1960), é multitarefa e multiusuário, usado em
+          grandes corporações, bancos e centros de pesquisa. Já o <strong>BSD</strong>, família derivada do Unix
+          desenvolvida na Universidade da Califórnia em Berkeley, é usado em servidores, redes e sistemas embarcados.
+        </p>
+      </article>
+
+      <div class="caixa-destaque">
+        <h3>Roteiro de estudo</h3>
+        <p>
+          Ao assistir a um conteúdo, procure relacionar a explicação teórica com uma tarefa prática.
+          Por exemplo: depois de estudar processos, utilize ferramentas de monitoramento; depois de
+          estudar permissões, crie usuários e grupos em um ambiente de testes; depois de estudar Bash,
+          tente automatizar uma tarefa repetitiva.
+        </p>
+      </div>
+
+      <button class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="seminarios" class="secao-aba">
+      <h2>5. Seminários</h2>
+
+      <article class="caixa-destaque">
+        <h3>Tema: Segurança em Sistemas Operacionais: Permissões, Auditoria e Hardening</h3>
+
+        <h4>Contextualização</h4>
+        <p>
+          O sistema operacional controla quem pode acessar arquivos, executar programas e usar os recursos da máquina.
+          Por isso, ele é a base da segurança de qualquer ambiente de TI, de um computador pessoal a um servidor de
+          uma empresa.
+        </p>
+        <p>
+          Entretanto, muitos incidentes não começam com ataques sofisticados, e sim com falhas simples de
+          configuração: senhas fracas, contas de serviço com acesso desnecessário, permissões excessivas, sistemas
+          desatualizados e ausência de monitoramento. A segurança envolve, portanto, questões técnicas,
+          organizacionais e de responsabilidade.
+        </p>
+
+        <h4>Objetivo do seminário</h4>
+        <p>
+          Analisar como usuários, grupos, permissões, auditoria e boas práticas de hardening reduzem a superfície de
+          ataque de um sistema operacional, discutindo também a responsabilidade de quem o administra e de quem o
+          utiliza.
+        </p>
+
+        <h4>Roteiro da apresentação</h4>
+        <ol class="lista-padrao">
+          <li><strong>Introdução:</strong> apresentar o papel do sistema operacional como gerenciador de recursos e como
+            camada de proteção entre usuários, aplicações e hardware.</li>
+          <li><strong>Usuários e grupos:</strong> explicar contas de usuário, grupos, o usuário administrador
+            (<code>root</code>) e o uso de <code>sudo</code>.</li>
+          <li><strong>Permissões em sistemas de arquivos:</strong> discutir leitura, escrita e execução
+            (<code>chmod</code>, <code>chown</code>), o princípio do menor privilégio e os riscos de permissões amplas
+            como <code>777</code>.</li>
+          <li><strong>Exemplos de risco:</strong> analisar falhas comuns, como senhas fracas, contas de serviço com
+            login liberado, serviços desnecessários ativos e softwares desatualizados, retomando o Case da LogiPar.</li>
+          <li><strong>Auditoria e monitoramento:</strong> mostrar o papel dos logs (<code>auth.log</code>,
+            <code>journalctl</code>, <code>last</code>) na detecção e na investigação de incidentes.
+          </li>
+          <li><strong>Hardening e boas práticas:</strong> apresentar medidas como autenticação por chave no SSH,
+            política de senhas, firewall, <code>fail2ban</code>, atualizações, remoção de serviços desnecessários e
+            backups testados.</li>
+          <li><strong>Conclusão:</strong> destacar que a segurança é um processo contínuo, e não um recurso instalado
+            uma única vez.</li>
+        </ol>
+
+        <h4>Síntese das discussões</h4>
+        <p>
+          A discussão evidencia que um sistema operacional não é seguro ou inseguro por definição. Sua segurança
+          depende de como ele é configurado, mantido e monitorado. Uma instalação padrão pode atender bem a um
+          ambiente de testes e ser inadequada para um servidor exposto à internet.
+        </p>
+        <p>
+          Também foi considerado que a segurança não deve depender apenas de ferramentas. Ela exige processos, como
+          revisão periódica de contas e permissões, análise de logs e atualizações. A responsabilidade é compartilhada:
+          administradores precisam configurar e monitorar, usuários precisam seguir boas práticas, e as organizações
+          precisam oferecer recursos e definir políticas claras.
+        </p>
+
+        <h4>Perguntas para debate</h4>
+        <ul class="lista-padrao">
+          <li>Por que o princípio do menor privilégio é tão importante, e o que costuma levar administradores a
+            ignorá-lo?</li>
+          <li>Um sistema pode ser considerado seguro apenas por usar Linux ou apenas por ter antivírus? Por quê?</li>
+          <li>Como equilibrar segurança e praticidade, por exemplo com senhas fortes, chaves SSH e restrição de acessos?
+          </li>
+          <li>Quem deve responder quando uma falha de configuração causa uma invasão: o administrador, o usuário ou a
+            empresa?</li>
+          <li>De que forma os logs e a auditoria ajudam a investigar um incidente, e o que acontece quando eles não
+            existem?</li>
+        </ul>
+
+        <h4>Conclusão do seminário</h4>
+        <p>
+          A segurança de um sistema operacional exige conhecimento técnico, rotina de manutenção e atenção a quem usa
+          e depende do sistema. Entender como funcionam usuários, permissões e auditoria é tão importante quanto
+          conhecer as ferramentas de proteção disponíveis.
+        </p>
+      </article>
+
+      <button class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+    <section id="storytelling" class="secao-aba">
+      <h2>6. Storytelling — Um Dia na Vida de um Administrador de Sistemas</h2>
+      <p>
+        Esta narrativa fictícia acompanha o <strong>Case 1 (LogiPar)</strong>. Marina é analista de TI da empresa e
+        precisa descobrir, ao longo de uma manhã, por que o servidor Linux da transportadora ficou lento. Em cada
+        etapa, ela usa um conceito estudado na disciplina.
+      </p>
+
+      <article class="caixa-destaque">
+        <h3>07:42 — O alerta</h3>
+        <p>
+          O operador de logística avisa no chat: o rastreamento de cargas está travando. O primeiro impulso de Marina
+          é reiniciar o servidor, mas ela sabe que isso poderia apagar pistas do problema. Ela prefere investigar.
+        </p>
+        <div class="bloco-codigo-wrapper">
+          <pre><code>$ uptime
+ 07:44:10 up 41 days, 2 users, load average: 12.41, 11.87, 10.95</code></pre>
+        </div>
+        <p>
+          O servidor tem 2 CPUs e uma carga média acima de 12: há muito mais trabalho do que o processador consegue
+          atender. <strong>Quem está consumindo os recursos?</strong>
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>08:05 — O processo estranho</h3>
+        <div class="bloco-codigo-wrapper">
+          <pre><code>$ top -b -n1 | head -9   (trecho)
+  PID USER      %CPU %MEM COMMAND
+ 3187 backup    95.0 41.2 kworker-update
+  912 postgres   3.1 18.5 postgres</code></pre>
+        </div>
+        <p>
+          Um processo chamado <code>kworker-update</code> usa 95% da CPU. Marina estranha: processos
+          <code>kworker</code>
+          legítimos são do próprio kernel e pertencem ao <code>root</code>, não ao usuário <code>backup</code>.
+          Em vez de dar <code>kill</code> de imediato, ela anota o PID e confere o que ele é de fato.
+        </p>
+        <div class="bloco-codigo-wrapper">
+          <pre><code>$ ls -l /proc/3187/exe
+... /proc/3187/exe -> /tmp/.x11/kworker-update</code></pre>
+        </div>
+        <p>
+          O programa está escondido em uma pasta temporária. <strong>O processo é o problema ou apenas o sintoma
+            de outro problema?</strong>
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>08:31 — A memória</h3>
+        <div class="bloco-codigo-wrapper">
+          <pre><code>$ free -h
+        total   used   free  available
+Mem:    3.8Gi  3.6Gi  120Mi      150Mi
+Swap:   2.0Gi  1.9Gi  100Mi</code></pre>
+        </div>
+        <p>
+          O processo ocupa 41% da RAM. Sem memória livre, o sistema joga páginas para o disco (<em>swap</em>), que é
+          muito mais lento. É por isso que até o banco de dados e a aplicação, que estão normais, ficaram lentos:
+          o sistema gasta mais tempo trocando páginas do que trabalhando (<em>thrashing</em>).
+        </p>
+        <p>
+          Com as evidências anotadas, Marina encerra o processo com <code>kill -9 3187</code>. A carga cai e o
+          sistema volta a responder. Ela respira aliviada, mas por pouco tempo.
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>09:10 — O processo que volta</h3>
+        <p>
+          Menos de dez minutos depois, o <code>kworker-update</code> reaparece. Alguém, ou alguma coisa, o está
+          iniciando de novo. Marina verifica as tarefas agendadas do usuário <code>backup</code>.
+        </p>
+        <div class="bloco-codigo-wrapper">
+          <pre><code>$ sudo crontab -l -u backup
+*/5 * * * * /tmp/.x11/kworker-update</code></pre>
+        </div>
+        <p>
+          Matar o processo não bastava: o invasor deixou uma tarefa no <code>cron</code> que o reinicia a cada
+          5 minutos. <strong>Se há persistência, como o atacante entrou?</strong>
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>09:40 — Os logs contam a história</h3>
+        <div class="bloco-codigo-wrapper">
+          <pre><code>$ grep "Failed password" /var/log/auth.log | wc -l
+4213
+$ grep "Accepted" /var/log/auth.log | tail -1
+... Accepted password for backup from 203.0.113.45</code></pre>
+        </div>
+        <p>
+          Durante o fim de semana, milhares de tentativas de login falharam no SSH. Até que uma deu certo: a conta
+          <code>backup</code>, com senha fraca, foi descoberta por força bruta. Como não havia monitoramento nem
+          alertas, ninguém percebeu por dois dias. <strong>O que teria avisado a equipe a tempo?</strong>
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>10:20 — Permissões e hardening</h3>
+        <p>
+          Marina bloqueia a conta (<code>usermod -L backup</code>), remove a tarefa do <code>cron</code> e troca as
+          credenciais. Ao revisar o sistema, encontra outro problema: arquivos em <code>/etc</code> com permissão
+          <code>777</code>, que qualquer usuário pode alterar. Ela corrige com <code>chmod</code> e <code>chown</code>,
+          aplicando o princípio do menor privilégio. Em seguida, passa a exigir chave SSH em vez de senha, ativa o
+          <code>fail2ban</code> e configura o firewall.
+        </p>
+        <p>
+          A segurança deixa de ser uma etapa isolada e passa a fazer parte da administração do dia a dia.
+        </p>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>11:30 — A solução vira um script</h3>
+        <p>
+          Marina percebe que fez as mesmas verificações à mão várias vezes. Ela escreve um script Bash, agendado
+          no <code>cron</code>, para que o servidor avise antes que os usuários reclamem.
+        </p>
+        <div class="bloco-codigo-wrapper">
+          <pre><code>#!/bin/bash
+LIMITE=80
+LOG=/var/log/verifica_servidor.log
+
+checar_cpu() {
+  ps -eo pid,%cpu --sort=-%cpu | awk -v lim="$LIMITE" 'NR>1 &amp;&amp; $2>lim {print $1}'
+}
+
+for pid in $(checar_cpu); do
+  echo "$(date) ALERTA: PID $pid acima de ${LIMITE}% de CPU" >> "$LOG"
+done
+
+SWAP=$(free | awk '/Swap/ {if ($2>0) printf "%d", $3*100/$2; else print 0}')
+if [ "$SWAP" -gt 50 ]; then
+  echo "$(date) ALERTA: swap em ${SWAP}%" >> "$LOG"
+fi</code></pre>
+        </div>
+      </article>
+
+      <article class="caixa-destaque">
+        <h3>Fim do expediente — O que foi aprendido?</h3>
+        <p>
+          O problema não foi resolvido com um único comando mágico. Cada etapa da investigação mobilizou um
+          conteúdo da disciplina:
+        </p>
+        <ul class="lista-padrao">
+          <li><strong>Processos e escalonamento:</strong> carga média, <code>top</code>, <code>/proc</code> e
+            <code>kill</code>.
+          </li>
+          <li><strong>Memória:</strong> memória virtual, <em>swap</em> e <em>thrashing</em>.</li>
+          <li><strong>Sistemas de arquivos e permissões:</strong> <code>chmod</code>, <code>chown</code> e menor
+            privilégio.</li>
+          <li><strong>Segurança e auditoria:</strong> logs, contas de usuário, SSH e hardening.</li>
+          <li><strong>Automação:</strong> script Bash com função, laço e condição.</li>
+        </ul>
+        <p>
+          Essa é a ideia central de Sistemas Operacionais: entender como as partes se relacionam para conseguir
+          operar, analisar, manter e melhorar o sistema.
+        </p>
+      </article>
+
+      <button class="btn-topo" onclick="voltarAoTopo()">⬆ Voltar ao Topo</button>
+    </section>
+
+  </main>
+
+  <script>
+    function abrirAba(idAba, botao) {
+      const secoes = document.querySelectorAll('.secao-aba');
+      const botoes = document.querySelectorAll('.botao-aba');
+
+      secoes.forEach(secao => secao.classList.remove('ativa'));
+      botoes.forEach(btn => btn.classList.remove('ativo'));
+
+      const secao = document.getElementById(idAba);
+      if (secao) secao.classList.add('ativa');
+      if (botao) botao.classList.add('ativo');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function voltarAoTopo() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+
+</html>
